@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const feedbackSwiper = new Swiper(".feedbackSwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
+  loop: true,
   navigation: {
     nextEl: ".feedback-next",
     prevEl: ".feedback-prev",
