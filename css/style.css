@@ -127,6 +127,8 @@ textarea {
 [ BUTTONS ]*/
 
 .btn {
+    --bs-btn-color: #786962;
+    --bs-btn-hover-color: #FF996C;
     --bs-btn-padding-x: 1rem;
     --bs-btn-padding-y: 0.5rem;
     --bs-btn-border-radius: 8px;
@@ -211,6 +213,23 @@ textarea {
     border-color: rgba(0, 133, 160, 0.18);
 }
 
+.section-breadcrumbs .btn-svg {
+    --bs-btn-active-color: #786962;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-breadcrumbs .btn-svg.active .compare-svg path {
+    fill: #1BCE51;
+}
+
+.section-breadcrumbs .btn-svg.active .wishlist-svg path {
+    fill: #FFDF5F;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ BASE STYLES ]*/
 
@@ -234,6 +253,11 @@ textarea {
 
 .bg-blue {
     background-color: #F2FBFF !important;
+}
+
+.text-bg-light {
+    color: #786962!important;
+    background-color: rgba(240, 237, 235, 1)!important;
 }
 
 .z-index-1 {
@@ -287,6 +311,11 @@ textarea {
 .container-small {
     max-width: 960px;
     margin: 0 auto;
+}
+
+.badge {
+    --bs-badge-font-weight: 400;
+    --bs-badge-border-radius: 0.25rem;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -498,16 +527,6 @@ textarea {
     background: #f8ffea;
 }
 
-.categories_dropdown .nav-tabs .nav-link span {
-    display: inline-block;
-    color: #786962;
-    font-size: 10px;
-    font-weight: 400;
-    padding: 3px 6px;
-    border-radius: 2px;
-    background: #F0EDEB;
-}
-
 .categories_dropdown .tab-pane ul {
     display: flex;
     flex-direction: column;
@@ -517,16 +536,6 @@ textarea {
 .categories_dropdown .tab-pane ul li {
     display: flex;
     gap: 8px;
-}
-
-.categories_dropdown .tab-pane ul li span {
-    display: inline-block;
-    color: #786962;
-    font-size: 10px;
-    font-weight: 400;
-    padding: 3px 6px;
-    border-radius: 2px;
-    background: #F0EDEB;
 }
 
 .categories_dropdown .tab-pane ul a {
@@ -760,19 +769,32 @@ textarea {
     --bs-breadcrumb-font-size: 12px;
     --bs-breadcrumb-margin-bottom: 0;
     --bs-breadcrumb-item-active-color: #786962;
-    /* display: block; */
+    --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.1665 1.51526L3.6665 4.01526L1.1665 6.51526V1.51526Z' fill='white' stroke='%23AD9D95' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");
+    display: block;
 }
 
 .breadcrumb-item {
-    /* display: inline; */
+    display: inline;
+}
+
+.breadcrumb-item svg {
+    transform: translateY(-4px);
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    /* float: inherit; */
+    float: inherit;
 }
 
 .breadcrumb a {
     text-decoration: none;
+}
+
+.section-breadcrumbs .buttons-container a {
+    text-decoration: none;
+}
+
+.section-breadcrumbs .buttons-container .btn-svg.active {
+
 }
 
 /* section-hero */
@@ -1299,6 +1321,18 @@ textarea {
 
 .sidebar-widget .block-with-icon .icon-column {
     width: 34px;
+}
+
+.sidebar-widget .block-with-icon .section-title {
+    font-size: 1.125rem;
+}
+
+.sidebar-widget .block-with-icon p {
+    font-size: 0.875rem;
+}
+
+.sidebar-widget .block-with-icon .btn-text {
+    font-size: 1rem;
 }
 
 @media (min-width: 992px) {
