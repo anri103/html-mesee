@@ -1309,6 +1309,11 @@ textarea {
     --bs-card-border-width: 2px;
 }
 
+.block-with-icon {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .block-with-icon .icon-column {
     width: 61px;
 }
@@ -1319,19 +1324,24 @@ textarea {
     margin-bottom: 68px;
 }
 
-.sidebar-widget .block-with-icon .icon-column {
+.sidebar-block-with-icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.sidebar-block-with-icon .icon-column {
     width: 34px;
 }
 
-.sidebar-widget .block-with-icon .section-title {
+.sidebar-block-with-icon .section-title {
     font-size: 1.125rem;
 }
 
-.sidebar-widget .block-with-icon p {
+.sidebar-block-with-icon p {
     font-size: 0.875rem;
 }
 
-.sidebar-widget .block-with-icon .btn-text {
+.sidebar-block-with-icon .btn-text {
     font-size: 1rem;
 }
 
@@ -1343,4 +1353,8 @@ textarea {
 
 .content-container .section-text + .section-text {
     margin-top: 32px;
+}
+
+.sections-container .section-block + .section-block {
+    margin-top: 68px;
 }
