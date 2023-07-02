@@ -1358,3 +1358,31 @@ textarea {
 .sections-container .section-block + .section-block {
     margin-top: 68px;
 }
+
+.category-nav {
+    --bs-nav-link-color: #786962;
+    --bs-nav-link-hover-color: #FF6721;
+}
+
+.category-nav .link-category {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.category-nav .link-category::after {
+    content: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.9297 1L6.92969 5L1.92969 1' stroke='%23AD9D95' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+.category-nav .link-category.collapsed::after {
+    transform: translateY(-50%) rotate(0);
+}
+
+.subcategory-nav {
+    --bs-nav-link-color: #786962;
+    --bs-nav-link-hover-color: #FF6721;
+}
