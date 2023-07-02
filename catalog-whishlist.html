@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Catalog whishlist - mesee.ru</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_top d-none d-lg-block">
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="site-logo">
+                            <a href="#">
+                                <img src="img/de3736f6c53dce856381.svg" alt="messe.ru" />
+                            </a>
+                            <div class="tagline">поиск оборудования</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <form class="search-form" action="#">
+                            <div class="position-relative d-flex align-items-center">
+                                <input type="text" class="form-control pe-5" placeholder="поиск">
+                                <button type="submit"
+                                    class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_14_482)">
+                                            <path
+                                                d="M10.5 20C15.7467 20 20 15.7467 20 10.5C20 5.2533 15.7467 1 10.5 1C5.2533 1 1 5.2533 1 10.5C1 15.7467 5.2533 20 10.5 20Z"
+                                                stroke="#AD9D95" stroke-width="1.71429" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23 23L17 17" stroke="#AD9D95" stroke-width="1.71429"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_14_482">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <a class="btn btn-primary" href="#">начните продавать</a>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="header_auth">
+                            <div class="d-flex align-items-start gap-2">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_459_591)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.62299 3.25C9.62299 5.04493 8.2312 6.5 6.51433 6.5C4.79746 6.5 3.40566 5.04493 3.40566 3.25C3.40566 1.45507 4.79746 0 6.51433 0C8.2312 0 9.62299 1.45507 9.62299 3.25ZM0.531444 12.125C1.32371 9.48786 3.73045 7.89288 6.51434 7.89288C9.29818 7.89288 11.6592 9.48786 12.4514 12.125C12.6193 12.6836 12.3205 13 12.0371 13H0.991594C0.708161 13 0.399429 12.5644 0.531444 12.125Z"
+                                            fill="#463E3A"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_459_591">
+                                            <rect width="13" height="13" fill="white" transform="translate(0.5)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="#login_modal" data-bs-toggle="modal">войти / регистрация</a>
+                            </div>
+                            <div class="d-flex align-items-start gap-2">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_459_597)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.5 2.43478C0.5 1.64237 1.1236 1 1.89286 1H12.1071C12.8764 1 13.5 1.64237 13.5 2.43478V2.76187L7.35601 6.9819C7.26936 7.03929 7.14358 7.08025 6.99999 7.08025C6.85641 7.08025 6.73063 7.03929 6.64398 6.9819L0.5 2.76187V2.43478ZM0.5 4.19894V10.5652C0.5 11.3576 1.1236 12 1.89286 12H12.1071C12.8764 12 13.5 11.3576 13.5 10.5652V4.19893L7.99673 7.97889L7.99138 7.98256C7.6992 8.17847 7.34833 8.27591 6.99999 8.27591C6.65166 8.27591 6.3008 8.17844 6.00863 7.98253L6.00324 7.97892L0.5 4.19894Z"
+                                            fill="#463E3A"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_459_597">
+                                            <rect width="13" height="13" fill="white" transform="translate(0.5)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="mailto:info@mesee.ru">info@mesee.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_bottom">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+    
+                    <!-- Мобильный логотип -->
+                    <div class="site-logo d-lg-none">
+                        <img src="img/de3736f6c53dce856381.svg" alt="messe.ru" />
+                    </div>
+    
+                    <!-- Мобильные иконки -->
+                    <div class="d-lg-none">
+                        <ul class="list-inline mb-0 d-flex align-items-center">
+                            <!-- Телефон -->
+                            <li class="list-inline-item">
+                                <a class="nav-link p-1" href="tel:88002220032">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#786962" viewBox="0 0 16 16">
+                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- Личный кабинет -->
+                            <li class="list-inline-item">
+                                <a class="nav-link p-1" href="#login_modal" data-bs-toggle="modal">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12.3562" cy="11.5" r="10.9" stroke="#786962" stroke-width="1.2" />
+                                        <circle cx="12.3562" cy="8.21419" r="3.23333" stroke="#786962" stroke-width="1.2" />
+                                        <path
+                                            d="M4.14197 18.619C4.14197 18.619 6.07474 13.1428 12.3563 13.1428C18.6378 13.1428 20.5705 18.619 20.5705 18.619"
+                                            stroke="#786962" stroke-width="1.2" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- Поиск -->
+                            <li class="list-inline-item">
+                                <a class="nav-link p-1" href="#searchForm" data-bs-toggle="offcanvas"
+                                    aria-controls="searchForm">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#786962" stroke-width="1.37"
+                                            stroke-linecap="round" stroke-linejoin="round"></circle>
+                                        <path d="M18.7691 19.2549L22.4399 22.9162" stroke="#786962" stroke-width="1.37"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- Меню -->
+                            <li class="list-inline-item">
+                                <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Основное меню -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Десктопное мегаменю -->
+                        <div class="dropdown dropdown-fullwidth d-none d-lg-block">
+                            <button type="button" class="btn btn-text px-0" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-auto-close="outside">
+                                <img src="img/844f8d501865db251891.svg" alt="категории" />
+                                <span>категории</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="categories_dropdown">
+                                    <div class="row">
+                                        <div class="col-4 border-end">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#category-01" type="button" role="tab" aria-controls="category-01" aria-selected="true">
+                                                        Металл
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#category-02" type="button" role="tab" aria-controls="profile" aria-selected="false">дерево <span class="badge text-bg-light">234</span></button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#category-03" type="button" role="tab" aria-controls="category-03" aria-selected="false">склад <span class="badge text-bg-light">234</span></button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#category-01" type="button" role="tab" aria-controls="category-01" aria-selected="false">строительство</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#category-02" type="button" role="tab" aria-controls="category-02" aria-selected="false">переработка отходов</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#category-03" type="button" role="tab" aria-controls="category-03" aria-selected="false">полимерное оборудование</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#category-01" type="button" role="tab" aria-controls="category-01" aria-selected="false">Б/У</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="category-01" role="tabpanel" aria-labelledby="category-01-tab">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Мезонин б/у</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Мезонин паллетного типа</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Стеллажи роликовые</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Техника</a></li>
+                                                                <li><a href="#">Системы пожаротушения</a></li>
+                                                                <li><a href="#">Настилы б/у</a></li>
+                                                                <li><a href="#">Отбойник Фронтальный</a></li>
+                                                                <li><a href="#">Набивные стеллажи</a></li>
+                                                                <li><a href="#">Металлические стеллажи для склада</a></li>
+                                                                <li><a href="#">Прессованный настил</a></li>
+                                                                <li><a href="#">Решетчатый оцинкованный настил</a></li>
+                                                                <li><a href="#">Штабелер ручной б/у</a></li>
+                                                                <li><a href="#">Комплектовщик б/у</a></li>
+                                                                <li><a href="#">Ричтраки б/у</a></li>
+                                                                <li><a href="#">Штабелёры самоходные б/у</a></li>
+                                                                <li><a href="#">Мезонин-платформа</a></li>
+                                                                <li><a href="#">Грузовые стеллажи для склада</a></li>
+                                                                <li><a href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                                <li><a href="#">Вертикальные пакетировочные прессы</a></li>
+                                                                <li><a href="#">Гидравлические штабелеры</a></li>
+                                                                <li><a href="#">Стеллажи паллетные б/у</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="pt-4 pe-4">
+                                                                <img class="category-img" src="img/a500efe9589ae674197c.png" alt="склад" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="category-02" role="tabpanel" aria-labelledby="category-02-tab">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Мезонин б/у</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Мезонин паллетного типа</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Стеллажи роликовые</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Техника</a></li>
+                                                                <li><a href="#">Системы пожаротушения</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="pt-4 pe-4">
+                                                                <img class="category-img" src="img/categories-drop-02.jpg" alt="склад" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="category-03" role="tabpanel" aria-labelledby="category-03-tab">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Мезонин б/у</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Мезонин паллетного типа</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Стеллажи роликовые</a> <span class="badge text-bg-light">234</span></li>
+                                                                <li><a href="#">Техника</a></li>
+                                                                <li><a href="#">Системы пожаротушения</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="pt-4 pe-4">
+                                                                <img class="category-img" src="img/categories-drop-03.jpg" alt="склад" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Разделитель -->
+                        <div class="menu-divider d-none d-lg-block"></div>
+                        
+                        <!-- Меню -->
+                        <div class="mt-3 mt-lg-0 mx-auto">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#">главная</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">купить</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">продать</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">услуги</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">объявления</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">все объявление</a>
+                                        <a class="dropdown-item" href="#">б/у оборудование</a>
+                                        <a class="dropdown-item" href="#">новое оборудование</a>
+                                        <a class="dropdown-item" href="#">аукционы</a>
+                                        <a class="dropdown-item" href="#">архив</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <!-- Триггер для Всплывающего Мобильного меню категорий -->
+                        <button type="button" class="catalog-trigger btn btn-primary w-100 d-lg-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasCatalog" aria-controls="offcanvasCatalog">
+                            <span>Категории</span>
+                        </button>
+                        <!-- Выбор языка -->
+                        <div class="lang_select dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                        <span>RU</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                        <span>RU</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                        <span>RU</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Контакты -->
+                        <div class="header_navbar_contacts d-none d-lg-block">
+                            <a href="tel:88002220032">8 (800)-222-00-32</a>
+                            <div class="tagline">звонок по России бесплатный</div>
+                        </div>
+                    </div>
+    
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Всплывающее Мобильное меню категорий -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCatalog">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Категории</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="navbar d-block">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Металл</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                            <a class="dropdown-item" href="#">Настилы б/у</a>
+                            <a class="dropdown-item" href="#">Отбойник Фронтальный</a>
+                            <a class="dropdown-item" href="#">Набивные стеллажи</a>
+                            <a class="dropdown-item" href="#">Металлические стеллажи для склада</a>
+                            <a class="dropdown-item" href="#">Прессованный настил</a>
+                            <a class="dropdown-item" href="#">Решетчатый оцинкованный настил</a>
+                            <a class="dropdown-item" href="#">Штабелер ручной б/у</a>
+                            <a class="dropdown-item" href="#">Комплектовщик б/у</a>
+                            <a class="dropdown-item" href="#">Ричтраки б/у</a>
+                            <a class="dropdown-item" href="#">Штабелёры самоходные б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин-платформа</a>
+                            <a class="dropdown-item" href="#">Грузовые стеллажи для склада</a>
+                            <a class="dropdown-item" href="#">Горизонтальные пакетировочные прессы</a>
+                            <a class="dropdown-item" href="#">Вертикальные пакетировочные прессы</a>
+                            <a class="dropdown-item" href="#">Гидравлические штабелеры</a>
+                            <a class="dropdown-item" href="#">Стеллажи паллетные б/у</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Дерево</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Склад</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Строительство</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Переработка отходов</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Полимерное оборудование</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Б/У</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Мезонин б/у</a>
+                            <a class="dropdown-item" href="#">Мезонин паллетного типа</a>
+                            <a class="dropdown-item" href="#">Стеллажи роликовые</a>
+                            <a class="dropdown-item" href="#">Техника</a>
+                            <a class="dropdown-item" href="#">Системы пожаротушения</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Всплывающая Форма поиска -->
+    <div class="offcanvas offcanvas-top offcanvas-search" id="searchForm" tabindex="-1">
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="py-3">
+                    <form class="search-form" action="#">
+                        <div class="position-relative d-flex align-items-center">
+                            <input type="text" class="form-control ps-3 pe-5" placeholder="Найти">
+                            <button type="submit"
+                                class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5 me-5">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#786962" stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                    <path d="M18.7691 19.2549L22.4399 22.9162" stroke="#786962" stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <button type="button"
+                                class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5 me-2"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 1.33126L1.18451 21.3311M20.8155 21.3309L1 1.33105" stroke="#786962"
+                                        stroke-width="1.28" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <section class="section-breadcrumbs">
+            <div class="container">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-lg-6">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">
+                                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4119 7.06425L7.64442 2.01547L1.57057 7.07923C1.16442 7.41784 0.560677 7.36308 0.222072 6.95693C-0.116534 6.55078 -0.0617799 5.94704 0.344369 5.60843L6.62764 0.37008C7.23067 -0.132663 8.1098 -0.122071 8.70054 0.395053L14.6732 5.62342C15.0711 5.97171 15.1113 6.5766 14.763 6.97447C14.4147 7.37234 13.8098 7.41254 13.4119 7.06425ZM6.86969 4.20833C7.30705 3.86027 7.92679 3.86028 8.36415 4.20833L14.6382 9.20123V14.8305C14.6382 15.4932 14.1009 16.0304 13.4382 16.0304H1.79565C1.13291 16.0304 0.595652 15.4932 0.595652 14.8304V9.20123L6.86969 4.20833ZM6.34028 11.0637H8.89347V16.0304H6.34028V11.0637Z" fill="#786962"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Категория</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Купить</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="buttons-container d-flex gap-3 justify-content-lg-end">
+                            <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+                            <a class="btn btn-svg px-0 active" href="#">
+                                <svg class="compare-svg" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2C20 0.89543 19.1046 0 18 0C16.8954 0 16 0.895431 16 2V17C16 18.1046 16.8954 19 18 19C19.1046 19 20 18.1046 20 17V2ZM10 4C11.1046 4 12 4.89543 12 6L12 17C12 18.1046 11.1046 19 10 19C8.89543 19 8 18.1046 8 17L8 6C8 4.89543 8.89543 4 10 4ZM2 9C3.10457 9 4 9.89543 4 11L4 17C4 18.1046 3.10457 19 2 19C0.895431 19 0 18.1046 0 17V11C0 9.89543 0.895431 9 2 9Z" fill="#DEDEDE"/>
+                                </svg>
+                                <span>СРАВНИТЬ</span>
+                                <span class="badge text-bg-light">3</span>
+                            </a>
+                            <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+                            <a class="btn btn-svg px-0" href="#">
+                                <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#DEDEDE"/>
+                                </svg>
+                                <span>ИЗБРАННОЕ</span>
+                                <span class="badge text-bg-light">3</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="sidebar-left">
+                            <div class="sidebar-widget">
+                                <div class="bg-white rounded-3 p-3">
+                                    <ul class="category-nav nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link link-category collapsed" data-bs-toggle="collapse" href="#collapse-category-01" aria-expanded="false" aria-controls="collapse-category-01">Металл <span class="badge text-bg-light">234</span></a>
+                                            <div class="collapse" id="collapse-category-01">
+                                                <div class="card">
+                                                    <div class="card-body px-0">
+                                                        <ul class="subcategory-nav nav flex-column">
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин б/у <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин паллетного типа <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи роликовые <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Техника</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Системы пожаротушения</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Настилы б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Отбойник Фронтальный</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Набивные стеллажи</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Металлические стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Прессованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Решетчатый оцинкованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелер ручной б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Комплектовщик б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Ричтраки б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелёры самоходные б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин-платформа</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Грузовые стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Вертикальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Гидравлические штабелеры</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи паллетные б/у</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-category collapsed" data-bs-toggle="collapse" href="#collapse-category-02" aria-expanded="false" aria-controls="collapse-category-02">Дерево <span class="badge text-bg-light">234</span></a>
+                                            <div class="collapse" id="collapse-category-02">
+                                                <div class="card">
+                                                    <div class="card-body px-0">
+                                                        <ul class="subcategory-nav nav flex-column">
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин б/у <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин паллетного типа <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи роликовые <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Техника</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Системы пожаротушения</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Настилы б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Отбойник Фронтальный</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Набивные стеллажи</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Металлические стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Прессованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Решетчатый оцинкованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелер ручной б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Комплектовщик б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Ричтраки б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелёры самоходные б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин-платформа</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Грузовые стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Вертикальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Гидравлические штабелеры</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи паллетные б/у</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-category collapsed" data-bs-toggle="collapse" href="#collapse-category-03" aria-expanded="false" aria-controls="collapse-category-03">Склад <span class="badge text-bg-light">234</span></a>
+                                            <div class="collapse" id="collapse-category-03">
+                                                <div class="card">
+                                                    <div class="card-body px-0">
+                                                        <ul class="subcategory-nav nav flex-column">
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин б/у <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин паллетного типа <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи роликовые <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Техника</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Системы пожаротушения</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Настилы б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Отбойник Фронтальный</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Набивные стеллажи</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Металлические стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Прессованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Решетчатый оцинкованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелер ручной б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Комплектовщик б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Ричтраки б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелёры самоходные б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин-платформа</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Грузовые стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Вертикальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Гидравлические штабелеры</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи паллетные б/у</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar-widget">
+                                <div class="bg-blue p-4">
+                                    <div class="sidebar-block-with-icon">
+                                        <div class="icon-column flex-shrink-0">
+                                            <img class="img-fluid" src="img/icon-info.png" alt="Специалист">
+                                        </div>
+                                        <div>
+                                            <h3 class="section-title text-black">Есть вопрос?</h3>
+                                            <p>просто оставьте телефон и наш специалист связеться с вами</p>
+                                            <button class="btn btn-text" data-bs-toggle="modal" data-bs-target="#callback_modal">подробнее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="sections-container">
+                            <div class="section-block">
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-2">
+                                    <div class="col">
+                                        <div class="card product-card">
+                                            <div class="card-badge">NEW</div>
+                                            <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Стеллажи паллетные</h3>
+                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                                <div class="product-feature">
+                                                    <p>производитель: <span>ФЗМ</span></p>
+                                                    <p>страна: <span>россия</span></p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p>цена: <span>1 103 240 ₽</span></p>
+                                                    <button class="btn btn-text">купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card product-card">
+                                            <div class="card-badge">NEW</div>
+                                            <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Стеллажи паллетные</h3>
+                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                                <div class="product-feature">
+                                                    <p>производитель: <span>ФЗМ</span></p>
+                                                    <p>страна: <span>россия</span></p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p>цена: <span>1 103 240 ₽</span></p>
+                                                    <button class="btn btn-text">купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card product-card">
+                                            <div class="card-badge">NEW</div>
+                                            <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Стеллажи паллетные</h3>
+                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                                <div class="product-feature">
+                                                    <p>производитель: <span>ФЗМ</span></p>
+                                                    <p>страна: <span>россия</span></p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p>цена: <span>1 103 240 ₽</span></p>
+                                                    <button class="btn btn-text">купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card product-card">
+                                            <div class="card-badge">NEW</div>
+                                            <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Стеллажи паллетные</h3>
+                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                                <div class="product-feature">
+                                                    <p>производитель: <span>ФЗМ</span></p>
+                                                    <p>страна: <span>россия</span></p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p>цена: <span>1 103 240 ₽</span></p>
+                                                    <button class="btn btn-text">купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-xl-5">
+                    <div class="col">
+                        <div class="footer-widget">
+                            <div class="site-logo">
+                                <img class="img-fluid" src="img/de3736f6c53dce856381.svg" alt="messe.ru" />
+                                <div class="tagline">поиск оборудования</div>
+                            </div>
+                        </div>
+                        <div class="footer-widget">
+                            <p>117519, г. Москва, Варшавское шоссе, д.133, офис 2-221Б</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget">
+                            <h3>Категории товаров</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#">Металлообработка</a></li>
+                                <li><a href="#">Деревообработка</a></li>
+                                <li><a href="#">Строительство</a></li>
+                                <li><a href="#">Переработка отходов</a></li>
+                                <li><a href="#">Полимерное оборудование</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            <h3>Объявления</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#">Продать</a></li>
+                                <li><a href="#">Купить</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget">
+                            <h3>Компания</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget">
+                            <h3>Юридическая информация</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#">Консультация и сопровождение сделки</a></li>
+                                <li><a href="#">Правила сайта</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Возврат товара</a></li>
+                                <li><a href="#">Шаблон договора купли-продажи</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-widget footer_contacts">
+                            <h3>Контактная информация</h3>
+                            <div class="d-flex align-items-start gap-2 mt-4">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_459_591)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.62299 3.25C9.62299 5.04493 8.2312 6.5 6.51433 6.5C4.79746 6.5 3.40566 5.04493 3.40566 3.25C3.40566 1.45507 4.79746 0 6.51433 0C8.2312 0 9.62299 1.45507 9.62299 3.25ZM0.531444 12.125C1.32371 9.48786 3.73045 7.89288 6.51434 7.89288C9.29818 7.89288 11.6592 9.48786 12.4514 12.125C12.6193 12.6836 12.3205 13 12.0371 13H0.991594C0.708161 13 0.399429 12.5644 0.531444 12.125Z"
+                                            fill="#463E3A" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_459_591">
+                                            <rect width="13" height="13" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="#login_modal" data-bs-toggle="modal">войти / регистрация</a>
+                            </div>
+                            <div class="d-flex align-items-start gap-2 mt-4">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_459_597)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.5 2.43478C0.5 1.64237 1.1236 1 1.89286 1H12.1071C12.8764 1 13.5 1.64237 13.5 2.43478V2.76187L7.35601 6.9819C7.26936 7.03929 7.14358 7.08025 6.99999 7.08025C6.85641 7.08025 6.73063 7.03929 6.64398 6.9819L0.5 2.76187V2.43478ZM0.5 4.19894V10.5652C0.5 11.3576 1.1236 12 1.89286 12H12.1071C12.8764 12 13.5 11.3576 13.5 10.5652V4.19893L7.99673 7.97889L7.99138 7.98256C7.6992 8.17847 7.34833 8.27591 6.99999 8.27591C6.65166 8.27591 6.3008 8.17844 6.00863 7.98253L6.00324 7.97892L0.5 4.19894Z"
+                                            fill="#463E3A" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_459_597">
+                                            <rect width="13" height="13" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="mailto:info@mesee.ru">info@mesee.ru</a>
+                            </div>
+                            <div class="d-flex align-items-start gap-2 mt-4">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_459_603)">
+                                        <path
+                                            d="M14.9225 11.4448L13.0175 11.2273C12.56 11.1748 12.11 11.3323 11.7875 11.6548L10.4075 13.0348C8.28503 11.9548 6.54503 10.2223 5.46503 8.09232L6.85253 6.70482C7.17503 6.38232 7.33253 5.93232 7.28003 5.47482L7.06253 3.58482C6.97253 2.82732 6.33503 2.25732 5.57003 2.25732H4.27253C3.42503 2.25732 2.72003 2.96232 2.77253 3.80982C3.17003 10.2148 8.29253 15.3298 14.69 15.7273C15.5375 15.7798 16.2425 15.0748 16.2425 14.2273V12.9298C16.25 12.1723 15.68 11.5348 14.9225 11.4448Z"
+                                            fill="#463E3A" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_459_603">
+                                            <rect width="18" height="18" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Россия (бесплатно)</p>
+                                    <a href="tel:88002220032">8 800 222 00 32</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-2 mt-4">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_459_603)">
+                                        <path
+                                            d="M14.9225 11.4448L13.0175 11.2273C12.56 11.1748 12.11 11.3323 11.7875 11.6548L10.4075 13.0348C8.28503 11.9548 6.54503 10.2223 5.46503 8.09232L6.85253 6.70482C7.17503 6.38232 7.33253 5.93232 7.28003 5.47482L7.06253 3.58482C6.97253 2.82732 6.33503 2.25732 5.57003 2.25732H4.27253C3.42503 2.25732 2.72003 2.96232 2.77253 3.80982C3.17003 10.2148 8.29253 15.3298 14.69 15.7273C15.5375 15.7798 16.2425 15.0748 16.2425 14.2273V12.9298C16.25 12.1723 15.68 11.5348 14.9225 11.4448Z"
+                                            fill="#463E3A" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_459_603">
+                                            <rect width="18" height="18" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Москва</p>
+                                    <a href="tel:+74951182711">+7 495 118 27 11</a>
+                                    <a href="tel:+74951183218">+7 495 118 32 18</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>© 2019-2023 Mesee. Все права защищены.</p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-7">
+                        <h6>*Вся информация, предложения и цены на этом сайте могут быть изменены без несения какой-либо
+                            ответственности!</h6>
+                        <p>Назначенные торговые марки принадлежат их соответствующим владельцам.Mesee не несет
+                            ответственность за содержание вебсайтов, при переходе по ссылке.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6>Использование этого сайта подразумевает понимание и согласие с нашей</h6>
+                        <p><a href="#">Политикой в отношении обработки персональных данных</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка обратного звонка -->
+    <button type="button" class="btn-callback" data-bs-toggle="modal" data-bs-target="#callback_modal">
+        <img src="img/349b2bc5c5652ff841c7.svg" alt="" />
+    </button>
+
+    <!-- ////// -->
+    <!-- Modals -->
+    <!-- ////// -->
+
+    <!-- Авторизация -->
+    <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="Авторизация" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-lg-5">
+                    <h3>Введите логин и пароль</h3>
+                    <form class="mt-5" action="#">
+                        <div class="mb-4">
+                            <label class="form-label">E-mail*</label>
+                            <input type="email" class="form-control" placeholder="info@mesee.ru" />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Пароль*</label>
+                            <input type="password" class="form-control" />
+                            <div class="form-text">Пароль должен содержать не менее 8 знаков</div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <a href="#">Забыли логин или пароль?</a> / <a href="#">Регистрация</a>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg">войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Обратный звонок -->
+    <div class="modal fade" id="callback_modal" tabindex="-1" aria-labelledby="Звонок специалисту" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-lg-5">
+                    <h3>Оставьте телефон и наш специалист свяжется с вами в течении 10 мин</h3>
+                    <form class="mt-5" action="#">
+                        <div class="mb-4">
+                            <label class="form-label">Имя*</label>
+                            <input type="text" class="form-control" placeholder="Введите имя" />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Телефон*</label>
+                            <div class="input-group phone-group">
+                                <select class="form-select" aria-label="Номер страны">
+                                    <option>+7</option>
+                                    <option>+1</option>
+                                    <option>+2</option>
+                                    <option>+3</option>
+                                    <option>+4</option>
+                                    <option>+5</option>
+                                    <option>+6</option>
+                                    <option>+8</option>
+                                </select>
+                                <input type="text" class="form-control mask_phone" aria-label="Телефон" placeholder="(___) - ___ - __ - __" />
+                            </div>
+                        </div>
+                        <div class="checkbox_container">
+                            <input type="checkbox" id="callback_check" />
+                            <label class="checkbox_label" for="callback_check"></label>
+                            <p>Я прочитал/а и согласен/на с <a href="#">условиями продажи и использования Messe</a></p>
+                        </div>
+                        <div class="text-center mt-5">
+                            <!-- ВНИМАНИЕ ДЛЯ ПРОГРАММИСТА !!! -->
+                            <!-- Добавил кнопке onclick="event.preventDefault()" только для того чтобы продемонстрировать модалку успешной отправки сообщения -->
+                            <!-- На боевом проекте это нужно убрать -->
+                            <button type="submit" class="btn btn-primary btn-lg" onclick="event.preventDefault()" data-bs-toggle="modal" data-bs-target="#success_message_modal">отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Успешное сообщение -->
+    <div class="modal fade" id="success_message_modal" tabindex="-1" aria-labelledby="Успешное сообщение" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-lg-5">
+                    <div class="success-message">
+                        <div class="d-flex gap-4">
+                            <img src="img/4cfc51e39042d2c503f7.svg" alt="" />
+                            <div>
+                                <h3>Спасибо! Ваши данные успешно отправлены</h3>
+                                <p>Мы обеспечиваем <strong>сопровождение сделки</strong> и предоставляем поддержку на всех этапах продажи.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Оформить заявку -->
+    <div class="modal fade" id="request_modal" tabindex="-1" aria-labelledby="Оформить заявку" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-lg-5">
+                    <h3>Оформить заявку</h3>
+                    <div class="request-product mt-5">
+                        <div class="d-flex gap-4">
+                            <img src="img/prod-modal-thumb-01.png" alt="">
+                            <div>
+                                <p>Мезонин</p>
+                                <p>Характеристика: модель/серийный номер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="mt-5" action="#">
+                        <div class="mb-4">
+                            <label class="form-label">Имя*</label>
+                            <input type="text" class="form-control" placeholder="Введите имя" />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Телефон*</label>
+                            <div class="input-group phone-group">
+                                <select class="form-select" aria-label="Номер страны">
+                                    <option>+7</option>
+                                    <option>+1</option>
+                                    <option>+2</option>
+                                    <option>+3</option>
+                                    <option>+4</option>
+                                    <option>+5</option>
+                                    <option>+6</option>
+                                    <option>+8</option>
+                                </select>
+                                <input type="text" class="form-control mask_phone" aria-label="Телефон" placeholder="(___) - ___ - __ - __" />
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">E-mail*</label>
+                            <input type="email" class="form-control" placeholder="info@mesee.ru" />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Сообщение</label>
+                            <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                        <div class="checkbox_container">
+                            <input type="checkbox" id="request_check" />
+                            <label class="checkbox_label" for="request_check"></label>
+                            <p>Я прочитал/а и согласен/на с <a href="#">условиями продажи и использования Messe</a></p>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg">отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
