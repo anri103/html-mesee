@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Form execution 01 - mesee.ru</title>
+    <title>Form auth - mesee.ru</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -536,8 +536,8 @@
                     <div class="col-lg-4">
                         <div class="sidebar-left">
                             <div class="sidebar-widget">
-                                <h2 class="fs-4">Разместите свое оборудование на Mesee бесплатно</h2>
-                                <p class="section-subtitle">Просто заполните эту форму, чтобы начать продавать на Exapro - это бесплатно. Вы сможете создать свою учетную запись или войти в систему после заполнения этой формы.</p>
+                                <h2 class="fs-4">Создайте бесплатную учетную запись</h2>
+                                <p class="section-subtitle">Как и 40 000 профессионалов, находите квалифицированных покупателей для своего оборудования на промышленном рынке Messe</p>
                             </div>
                             <div class="sidebar-widget">
                                 <div class="bg-blue p-4">
@@ -558,16 +558,24 @@
                     <div class="col-lg-8">
                         <div class="sections-container">
                             <div class="section-block">
-                                <form class="row gy-3" action="/form-execution-success.html">
-                                    <div class="col-md-6">
-                                        <label class="form-label">Имя*</label>
-                                        <input type="text" class="form-control" placeholder="Введите имя">
-                                    </div>
+                                <form class="row gy-3" action="/form-auth-success.html">
                                     <div class="col-md-6">
                                         <label class="form-label">E-mail*</label>
                                         <input type="email" class="form-control" placeholder="info@mesee.ru">
-                                    </div>
-                                    <div class="col-12">
+                                    </div>        
+                                    <div class="col-md-6">
+                                        <label class="form-label">Пароль*</label>
+                                        <input type="password" class="form-control">
+                                    </div>        
+                                    <div class="col-md-6">
+                                        <label class="form-label">Имя*</label>
+                                        <input type="text" class="form-control" placeholder="Введите имя">
+                                    </div>        
+                                    <div class="col-md-6">
+                                        <label class="form-label">Фамилия</label>
+                                        <input type="text" class="form-control" placeholder="Введите фамилию">
+                                    </div>                                    
+                                    <div class="col-md-6">
                                         <label class="form-label">Телефон*</label>
                                         <div class="input-group phone-group">
                                             <select class="form-select" aria-label="Номер страны">
@@ -582,59 +590,72 @@
                                             </select>
                                             <input type="text" class="form-control mask_phone" aria-label="Телефон" placeholder="(___) - ___ - __ - __">
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Заглавие</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Описание</label>
-                                        <textarea class="form-control" rows="6"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Выберите категорию оборудования</label>
-                                        <input type="text" class="form-control">
-                                    </div>
+                                    </div>        
                                     <div class="col-md-6">
-                                        <label class="form-label">Страна</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Производитель</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Модель</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Год выпуска</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Минимальная цена</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Состояние</label>
+                                        <label class="form-label">Компания</label>
                                         <input type="text" class="form-control">
                                     </div>
                                     <div class="col-12">
-                                        <label for="formFileMultiple" class="form-label">Загрузить файлы</label>
-                                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                        <div class="checkbox_container">
+                                            <input type="checkbox" id="accept_check">
+                                            <label class="checkbox_label" for="accept_check"></label>
+                                            <p>Я прочитал/а и согласен/на с <a href="#">условиями продажи и использования Messe</a></p>
+                                        </div>
+                                        <p>*обязательные для заполнения поля</p>
                                     </div>
                                     <div class="col-12">
-                                        <p>JPG, JPEG, PNG или PDF - Водяной знак или логотип не допускается на фотографиях. Пожалуйста, убедитесь, что у вас есть права на фотографии, которые вы загружаете.</p>
-                                        <p>Макс. 20MB - будут загружены после сохранения</p>
+                                        <p class="fs-5">Подписаться на новостную рассылку:</p>
+                                        <div class="checkbox_container">
+                                            <input type="checkbox" id="subscribe_check">
+                                            <label class="checkbox_label" for="subscribe_check"></label>
+                                            <p>Подписываясь на рассылку, Вы соглашаетесь c условиями <a href="#">политики конфиденциальности</a> и <a href="#">политики обработки персональных данных</a></p>
+                                        </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="text-center mt-5">
-                                            <button type="submit" class="btn btn-primary">добавить обьявление</button>
+                                        <div class="mt-5">
+                                            <button type="submit" class="btn btn-primary">Сохранить</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
+                            <div class="section-block">
+                                <div class="row gy-3 row-cols-2 row-cols-md-2 row-cols-lg-4">
+                                    <div class="col">
+                                        <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                            <img class="img-fluid" src="img/icon-package.png" alt="package" width="64" height="64">
+                                            <div class="text-center" style="max-width: 120px;">
+                                                <p class="small">большой ассортимент</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                            <img class="img-fluid" src="img/icon-delivery.png" alt="delivery" width="64" height="64">
+                                            <div class="text-center" style="max-width: 120px;">
+                                                <p class="small">продаем оборудование по всей России</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                            <img class="img-fluid" src="img/icon-package.png" alt="package" width="64" height="64">
+                                            <div class="text-center" style="max-width: 120px;">
+                                                <p class="small">бесплатная консультация</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                            <img class="img-fluid" src="img/icon-delivery.png" alt="delivery" width="64" height="64">
+                                            <div class="text-center" style="max-width: 120px;">
+                                                <p class="small">гарантия на новую технику</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
