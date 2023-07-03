@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Index - mesee.ru</title>
+    <title>Catalog archive - mesee.ru</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -486,526 +486,232 @@
 
     <main class="main">
 
-        <section class="section section-hero pt-0">
+        <section class="section-breadcrumbs">
             <div class="container">
-                <div class="hero-carousel carousel slide" id="heroControls" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#">
-                                <img class="hero-img" src="img/hero-banner-01.png" alt="">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-lg-6">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">
+                                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4119 7.06425L7.64442 2.01547L1.57057 7.07923C1.16442 7.41784 0.560677 7.36308 0.222072 6.95693C-0.116534 6.55078 -0.0617799 5.94704 0.344369 5.60843L6.62764 0.37008C7.23067 -0.132663 8.1098 -0.122071 8.70054 0.395053L14.6732 5.62342C15.0711 5.97171 15.1113 6.5766 14.763 6.97447C14.4147 7.37234 13.8098 7.41254 13.4119 7.06425ZM6.86969 4.20833C7.30705 3.86027 7.92679 3.86028 8.36415 4.20833L14.6382 9.20123V14.8305C14.6382 15.4932 14.1009 16.0304 13.4382 16.0304H1.79565C1.13291 16.0304 0.595652 15.4932 0.595652 14.8304V9.20123L6.86969 4.20833ZM6.34028 11.0637H8.89347V16.0304H6.34028V11.0637Z" fill="#786962"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Категория</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Купить</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="buttons-container d-flex gap-3 justify-content-lg-end">
+                            <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+                            <a class="btn btn-svg px-0 active" href="#">
+                                <svg class="compare-svg" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2C20 0.89543 19.1046 0 18 0C16.8954 0 16 0.895431 16 2V17C16 18.1046 16.8954 19 18 19C19.1046 19 20 18.1046 20 17V2ZM10 4C11.1046 4 12 4.89543 12 6L12 17C12 18.1046 11.1046 19 10 19C8.89543 19 8 18.1046 8 17L8 6C8 4.89543 8.89543 4 10 4ZM2 9C3.10457 9 4 9.89543 4 11L4 17C4 18.1046 3.10457 19 2 19C0.895431 19 0 18.1046 0 17V11C0 9.89543 0.895431 9 2 9Z" fill="#DEDEDE"/>
+                                </svg>
+                                <span>СРАВНИТЬ</span>
+                                <span class="badge text-bg-light">3</span>
+                            </a>
+                            <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+                            <a class="btn btn-svg px-0" href="#">
+                                <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#DEDEDE"/>
+                                </svg>
+                                <span>ИЗБРАННОЕ</span>
+                                <span class="badge text-bg-light">3</span>
                             </a>
                         </div>
-                        <div class="carousel-item">
-                            <a href="#">
-                                <img class="hero-img" src="img/hero-banner-01.png" alt="">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#">
-                                <img class="hero-img" src="img/hero-banner-01.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev hero_control" type="button" data-bs-target="#heroControls"
-                        data-bs-slide="prev">
-                        <img class="img-fluid" src="img/chevron-prev.svg" alt="Назад" />
-                    </button>
-                    <button class="carousel-control-next hero_control" type="button" data-bs-target="#heroControls"
-                        data-bs-slide="next">
-                        <img class="img-fluid" src="img/chevron-next.svg" alt="Вперед" />
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-whyUs">
-            <div class="container">
-                <div class="section-top">
-                    <h2 class="section-title">ПОЧЕМУ ПРОДАВАТЬ НА messe.ru выгодно</h2>
-                    <p class="section-subtitle">Как и 40 000 профессионалов, находите квалифицированных покупателей для
-                        своего оборудования на промышленном рынке Messe</p>
-                </div>
-            </div>
-            <div class="tabs">
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li role="presentation">
-                        <button class="nav-link active" id="pills-seller-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-seller" type="button" role="tab" aria-controls="pills-seller"
-                            aria-selected="true">продавцам</button>
-                    </li>
-                    <li role="presentation">
-                        <button class="nav-link" id="pills-buyer-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-buyer" type="button" role="tab" aria-controls="pills-buyer"
-                            aria-selected="false">покупателям</button>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="pills-seller" role="tabpanel"
-                        aria-labelledby="pills-seller-tab">
-                        <div class="container">
-                            <div class="whyUs-steps">
-                                <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Размещаем обьявления бесплатно</div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Поможем сформировать обьявление</div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Бесплатные консультации и ведение сделки</div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Оплата комиссии после продажи</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center mt-5">
-                                <button class="btn btn-primary">выложить обьявление</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-buyer" role="tabpanel" aria-labelledby="pills-buyer-tab">
-                        <div class="container">
-                            <div class="whyUs-steps">
-                                <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Размещаем обьявления бесплатно</div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Поможем сформировать обьявление</div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Бесплатные консультации и ведение сделки</div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="whyUs-step-item">
-                                            <img src="img/68ccd9bb09cf43fed07e.svg" alt="" />
-                                            <div class="whyUs-step-text">Оплата комиссии после продажи</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center mt-5">
-                                <button class="btn btn-primary">выложить обьявление</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-newAnnouncements">
+        <section class="section section-services">
             <div class="container">
-                <div class="section-top">
-                    <h2 class="section-title">новые обьявления на сайте</h2>
-                </div>
-            </div>
-            <div class="products-container px-3">
-                <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                    <div class="col">
-                        <div class="card product-card">
-                            <div class="card-img-container">
-                                <div class="card-badge">NEW</div>
-                                <a href="#">
-                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a href="#">Стеллажи паллетные</a>
-                                </p>
-                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                <div class="product-feature">
-                                    <p>производитель: <span>ФЗМ</span></p>
-                                    <p>страна: <span>россия</span></p>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="sidebar-left">
+                            <div class="sidebar-widget">
+                                <div class="bg-white rounded-3 p-3">
+                                    <ul class="category-nav nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link link-category collapsed" data-bs-toggle="collapse" href="#collapse-category-01" aria-expanded="false" aria-controls="collapse-category-01">Металл <span class="badge text-bg-light">234</span></a>
+                                            <div class="collapse" id="collapse-category-01">
+                                                <div class="card">
+                                                    <div class="card-body px-0">
+                                                        <ul class="subcategory-nav nav flex-column">
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин б/у <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин паллетного типа <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи роликовые <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Техника</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Системы пожаротушения</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Настилы б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Отбойник Фронтальный</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Набивные стеллажи</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Металлические стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Прессованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Решетчатый оцинкованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелер ручной б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Комплектовщик б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Ричтраки б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелёры самоходные б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин-платформа</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Грузовые стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Вертикальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Гидравлические штабелеры</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи паллетные б/у</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-category collapsed" data-bs-toggle="collapse" href="#collapse-category-02" aria-expanded="false" aria-controls="collapse-category-02">Дерево <span class="badge text-bg-light">234</span></a>
+                                            <div class="collapse" id="collapse-category-02">
+                                                <div class="card">
+                                                    <div class="card-body px-0">
+                                                        <ul class="subcategory-nav nav flex-column">
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин б/у <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин паллетного типа <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи роликовые <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Техника</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Системы пожаротушения</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Настилы б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Отбойник Фронтальный</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Набивные стеллажи</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Металлические стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Прессованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Решетчатый оцинкованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелер ручной б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Комплектовщик б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Ричтраки б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелёры самоходные б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин-платформа</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Грузовые стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Вертикальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Гидравлические штабелеры</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи паллетные б/у</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-category collapsed" data-bs-toggle="collapse" href="#collapse-category-03" aria-expanded="false" aria-controls="collapse-category-03">Склад <span class="badge text-bg-light">234</span></a>
+                                            <div class="collapse" id="collapse-category-03">
+                                                <div class="card">
+                                                    <div class="card-body px-0">
+                                                        <ul class="subcategory-nav nav flex-column">
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин б/у <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин паллетного типа <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи роликовые <span class="badge text-bg-light">234</span></a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Техника</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Системы пожаротушения</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Настилы б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Отбойник Фронтальный</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Набивные стеллажи</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Металлические стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Прессованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Решетчатый оцинкованный настил</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелер ручной б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Комплектовщик б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Ричтраки б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Штабелёры самоходные б/у</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Мезонин-платформа</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Грузовые стеллажи для склада</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Горизонтальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Вертикальные пакетировочные прессы</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Гидравлические штабелеры</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Стеллажи паллетные б/у</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="product-price">
-                                    <p>цена: <span>1 103 240 ₽</span></p>
-                                    <button class="btn btn-text">купить</button>
+                            </div>
+                            <div class="sidebar-widget">
+                                <div class="bg-blue p-4">
+                                    <div class="sidebar-block-with-icon">
+                                        <div class="icon-column flex-shrink-0">
+                                            <img class="img-fluid" src="img/icon-info.png" alt="Специалист">
+                                        </div>
+                                        <div>
+                                            <h3 class="section-title text-black">Есть вопрос?</h3>
+                                            <p>просто оставьте телефон и наш специалист связеться с вами</p>
+                                            <button class="btn btn-text" data-bs-toggle="modal" data-bs-target="#callback_modal">подробнее</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card product-card">
-                            <div class="card-img-container">
-                                <div class="card-badge">NEW</div>
-                                <a href="#">
-                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a href="#">Стеллажи паллетные</a>
-                                </p>
-                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                <div class="product-feature">
-                                    <p>производитель: <span>ФЗМ</span></p>
-                                    <p>страна: <span>россия</span></p>
-                                </div>
-                                <div class="product-price">
-                                    <p>цена: <span>1 103 240 ₽</span></p>
-                                    <button class="btn btn-text">купить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card product-card">
-                            <div class="card-img-container">
-                                <div class="card-badge">NEW</div>
-                                <a href="#">
-                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a href="#">Стеллажи паллетные</a>
-                                </p>
-                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                <div class="product-feature">
-                                    <p>производитель: <span>ФЗМ</span></p>
-                                    <p>страна: <span>россия</span></p>
-                                </div>
-                                <div class="product-price">
-                                    <p>цена: <span>1 103 240 ₽</span></p>
-                                    <button class="btn btn-text">купить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card product-card">
-                            <div class="card-img-container">
-                                <div class="card-badge">NEW</div>
-                                <a href="#">
-                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title">
-                                    <a href="#">Стеллажи паллетные</a>
-                                </p>
-                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                <div class="product-feature">
-                                    <p>производитель: <span>ФЗМ</span></p>
-                                    <p>страна: <span>россия</span></p>
-                                </div>
-                                <div class="product-price">
-                                    <p>цена: <span>1 103 240 ₽</span></p>
-                                    <button class="btn btn-text">купить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="text-center mt-5">
-                    <button class="btn btn-text">смотреть все</button>
-                </div>
-            </div>
-        </section>
+                    <div class="col-lg-8">
+                        <div class="sections-container">
+                            <div class="section-block">
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-2">
 
-        <section class="section section-categories">
-            <div class="container">
-                <div class="section-top">
-                    <h2 class="section-title">категории товаров</h2>
-                </div>
-                <div class="categories_top">
-                    <div class="row gy-4 align-items-center">
-                        <div class="col-lg-3">
-                            <div class="card category-card" style="background-image: url(img/category-card-01.png);">
-                                <div class="card-body">
-                                    <a class="card-title stretched-link" href="#">Металл</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card category-card" style="background-image: url(img/category-card-02.png);">
-                                <div class="card-body">
-                                    <a class="card-title stretched-link" href="#">Склад</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card category-card" style="background-image: url(img/category-card-03.png);">
-                                <div class="card-body">
-                                    <a class="card-title stretched-link" href="#">Переработка отходов</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="categories_bottom mt-4">
-                    <div class="row gy-4 align-items-center">
-                        <div class="col-lg-4">
-                            <div class="card category-card" style="background-image: url(img/category-card-04.png);">
-                                <div class="card-body">
-                                    <a class="card-title stretched-link" href="#">Строительство</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card category-card" style="background-image: url(img/category-card-05.png);">
-                                <div class="card-body">
-                                    <a class="card-title stretched-link" href="#">Дерево</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card category-card" style="background-image: url(img/category-card-06.png);">
-                                <div class="card-body">
-                                    <a class="card-title stretched-link" href="#">Полимерное оборудование</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="text-center mt-5 mt-lg-0">
-                                <a class="btn btn-text" href="#">смотреть все</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                                    <div class="col">
+                                        <div class="card product-card archive-card">
+                                            <div class="card-img-container">
+                                                <div class="card-stripe">Продано</div>
+                                                <a href="#">
+                                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    <a href="#">Стеллажи паллетные</a>
+                                                </p>
+                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                                <div class="product-feature">
+                                                    <p>производитель: <span>ФЗМ</span></p>
+                                                    <p>страна: <span>россия</span></p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p>цена: <span>1 103 240 ₽</span></p>
+                                                    <button class="btn btn-text">купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-        <section class="section section-workWithUs">
-            <div class="section-top">
-                <h2 class="section-title">с нами работают</h2>
-            </div>
-            <div class="partners-wrap">
-                <img class="img-fluid" src="img/a7c12046dea5f47c5b03.svg" alt="FM Logistic" />
-                <img class="img-fluid" src="img/15f447277d5afc61cd6f.svg" alt="Wildberries" />
-                <img class="img-fluid" src="img/b3665b49013e58463368.svg" alt="Ozon" />
-                <img class="img-fluid" src="img/2754573dff1dffe6c193.svg" alt="FM Logistic" />
-                <img class="img-fluid" src="img/a08f2fa61018e6de6cdb.svg" alt="Ашан" />
-                <img class="img-fluid" src="img/bd265aafa2ff455f0d00.svg" alt="X5 Retail Group" />
-            </div>
-            <div class="feedback-carousel">
-                <div class="container">
-                    <div class="position-relative">
-                        <div class="swiper feedbackSwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card feedback-card">
-                                        <div class="card-body">
-                                            <div class="feedback-logo">
-                                                <img src="img/b3665b49013e58463368.svg" alt="Ozon" />
+                                    <div class="col">
+                                        <div class="card product-card archive-card">
+                                            <div class="card-img-container">
+                                                <div class="card-stripe">Продано</div>
+                                                <a href="#">
+                                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                                </a>
                                             </div>
-                                            <h3 class="feedback-author">М.П.Алексей начальник департамента ПР</h3>
-                                            <p class="feedback-text">
-                                                И нет сомнений, что предприниматели в сети интернет неоднозначны и будут
-                                                объединены в целые кластеры себе подобных. <br />
-                                                <br />
-                                                Идейные соображения высшего порядка, а также существующая теория
-                                                выявляет срочную потребность новых принципов формирования
-                                                материально-технической и кадровой базы.
-                                            </p>
-                                            <div class="feedback-about">
-                                                <p>Станок:</p>
-                                                <a href="#">Оптоволоконная установка лазерного раскроя IRONMAC B</a>
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    <a href="#">Стеллажи паллетные</a>
+                                                </p>
+                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                                <div class="product-feature">
+                                                    <p>производитель: <span>ФЗМ</span></p>
+                                                    <p>страна: <span>россия</span></p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <p>цена: <span>1 103 240 ₽</span></p>
+                                                    <button class="btn btn-text">купить</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card feedback-card">
-                                        <div class="card-body">
-                                            <div class="feedback-logo">Частное лицо</div>
-                                            <h3 class="feedback-author">М.П.Алексей начальник департамента ПР</h3>
-                                            <p class="feedback-text">
-                                                И нет сомнений, что предприниматели в сети интернет неоднозначны и будут
-                                                объединены в целые кластеры себе подобных. <br />
-                                                <br />
-                                                Идейные соображения высшего порядка, а также существующая теория
-                                                выявляет срочную потребность новых принципов формирования
-                                                материально-технической и кадровой базы.
-                                            </p>
-                                            <div class="feedback-about">
-                                                <p>Станок:</p>
-                                                <a href="#">Оптоволоконная установка лазерного раскроя IRONMAC B</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card feedback-card">
-                                        <div class="card-body">
-                                            <div class="feedback-logo">
-                                                <img src="img/b3665b49013e58463368.svg" alt="Ozon" />
-                                            </div>
-                                            <h3 class="feedback-author">М.П.Алексей начальник департамента ПР</h3>
-                                            <p class="feedback-text">
-                                                И нет сомнений, что предприниматели в сети интернет неоднозначны и будут
-                                                объединены в целые кластеры себе подобных. <br />
-                                                <br />
-                                                Идейные соображения высшего порядка, а также существующая теория
-                                                выявляет срочную потребность новых принципов формирования
-                                                материально-технической и кадровой базы.
-                                            </p>
-                                            <div class="feedback-about">
-                                                <p>Станок:</p>
-                                                <a href="#">Оптоволоконная установка лазерного раскроя IRONMAC B</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card feedback-card">
-                                        <div class="card-body">
-                                            <div class="feedback-logo">
-                                                <img src="img/b3665b49013e58463368.svg" alt="Ozon" />
-                                            </div>
-                                            <h3 class="feedback-author">М.П.Алексей начальник департамента ПР</h3>
-                                            <p class="feedback-text">
-                                                И нет сомнений, что предприниматели в сети интернет неоднозначны и будут
-                                                объединены в целые кластеры себе подобных. <br />
-                                                <br />
-                                                Идейные соображения высшего порядка, а также существующая теория
-                                                выявляет срочную потребность новых принципов формирования
-                                                материально-технической и кадровой базы.
-                                            </p>
-                                            <div class="feedback-about">
-                                                <p>Станок:</p>
-                                                <a href="#">Оптоволоконная установка лазерного раскроя IRONMAC B</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="feedback_control feedback-prev" type="button">
-                            <img class="img-fluid" src="img/chevron-prev.svg" alt="Назад" />
-                        </button>
-                        <button class="feedback_control feedback-next" type="button">
-                            <img class="img-fluid" src="img/chevron-next.svg" alt="Вперед" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="section all_categories">
-            <div class="container">
-                <div class="section-top">
-                    <h2 class="section-title">все категории товаров</h2>
-                </div>
-                <div class="category_container">
-                    <div class="row gy-3 row-cols-1 row-cols-md-1 row-cols-lg-3">
-                        <div class="col">
-                            <div>
-                                <h3>а-н</h3>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#">Вертикально фрезерные станки</a></li>
-                                    <li><a href="#">Вертикальные пакетировочные прессы</a></li>
-                                    <li><a href="#">Гидравлические штабелеры</a></li>
-                                    <li><a href="#">Горизонтальные пакетировочные прессы</a></li>
-                                    <li><a href="#">Гравировальный станок с чпу</a></li>
-                                    <li><a href="#">Грузовые стеллажи для склада</a></li>
-                                    <li><a href="#">Гусеничный экскаватор</a></li>
-                                    <li><a href="#">Дробильные установки</a></li>
-                                    <li><a href="#">Книгопереплетное оборудование</a></li>
-                                    <li><a href="#">Колесные экскаваторы</a></li>
-                                    <li><a href="#">Комплектовщик б/у</a></li>
-                                    <li><a href="#">Конвейерные ленты</a></li>
-                                    <li><a href="#">Краны</a></li>
-                                    <li><a href="#">Лазерный станок с чпу</a></li>
-                                    <li><a href="#">Ленточная пила по дереву</a></li>
-                                    <li><a href="#">Литьевое оборудование</a></li>
-                                    <li><a href="#">Мезонин б/у</a></li>
-                                    <li><a href="#">Мезонин паллетного типа</a></li>
-                                    <li><a href="#">Мезонин-платформа</a></li>
-                                    <li><a href="#">Металлические стеллажи для склада</a></li>
-                                    <li><a href="#">Мини экскаваторы</a></li>
-                                    <li><a href="#">Набивные стеллажи</a></li>
-                                    <li><a href="#">Настилы б/у</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div>
-                                <h3>н-с</h3>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#">Настольные фрезерные станки</a></li>
-                                    <li><a href="#">Настольный токарный станок</a></li>
-                                    <li><a href="#">Оборудование для постпечатной обработки</a></li>
-                                    <li><a href="#">Обрабатывающие центры (вертикальные)</a></li>
-                                    <li><a href="#">Обрабатывающие центры (горизонтальные)</a></li>
-                                    <li><a href="#">Отбойник Фронтальный</a></li>
-                                    <li><a href="#">Офсетные печатные станки</a></li>
-                                    <li><a href="#">Пакетировочные прессы б/у</a></li>
-                                    <li><a href="#">Пилы</a></li>
-                                    <li><a href="#">Погрузочные устройства</a></li>
-                                    <li><a href="#">Полноповоротный экскаватор</a></li>
-                                    <li><a href="#">Полочные стеллажи б/у</a></li>
-                                    <li><a href="#">Препресс / предпечатное оборудование</a></li>
-                                    <li><a href="#">Прессованный настил</a></li>
-                                    <li><a href="#">Прессы</a></li>
-                                    <li><a href="#">Прицепной экскаватор</a></li>
-                                    <li><a href="#">Прочее оборудование</a></li>
-                                    <li><a href="#">Решетчатый оцинкованный настил</a></li>
-                                    <li><a href="#">Ричтраки б/у</a></li>
-                                    <li><a href="#">Системы пожаротушения</a></li>
-                                    <li><a href="#">Станки для производства окон</a></li>
-                                    <li><a href="#">Станки на ЧПУ</a></li>
-                                    <li><a href="#">Стеллажи паллетные б/у</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div>
-                                <h3>с-я</h3>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#">Стеллажи роликовые</a></li>
-                                    <li><a href="#">Строгальные станки</a></li>
-                                    <li><a href="#">Строительное оборудование</a></li>
-                                    <li><a href="#">Техника</a></li>
-                                    <li><a href="#">Токарно винторезные станки</a></li>
-                                    <li><a href="#">Токарно-фрезерные станки</a></li>
-                                    <li><a href="#">Токарные станки</a></li>
-                                    <li><a href="#">Токарные станки по металлу</a></li>
-                                    <li><a href="#">Токарный станок с копиром</a></li>
-                                    <li><a href="#">Токарный станок с ЧПУ</a></li>
-                                    <li><a href="#">Универсальные токарные станки</a></li>
-                                    <li><a href="#">Фрезерные станки</a></li>
-                                    <li><a href="#">Фрезерный станок по дереву</a></li>
-                                    <li><a href="#">Часовой токарный станок</a></li>
-                                    <li><a href="#">ЧПУ станок по дереву</a></li>
-                                    <li><a href="#">Шредеры</a></li>
-                                    <li><a href="#">Штабелер ручной б/у</a></li>
-                                    <li><a href="#">Штабелёры самоходные б/у</a></li>
-                                    <li><a href="#">Экскаваторы</a></li>
-                                    <li><a href="#">Экскаваторы-погрузчики</a></li>
-                                    <li><a href="#">Экструдеры и экструзионное оборудование</a></li>
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-center mt-5">
-                    <button class="btn btn-text" type="button">смотреть все</button>
                 </div>
             </div>
         </section>

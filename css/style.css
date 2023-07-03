@@ -318,6 +318,14 @@ textarea {
     --bs-badge-border-radius: 0.25rem;
 }
 
+.link-brown {
+    color: #786962;
+}
+
+.link-brown:hover {
+    color: #FF6721;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ HEADER ]*/
 
@@ -952,6 +960,7 @@ textarea {
     font-weight: 700;
     font-size: 0.875rem;
     background: #ffe9e0;
+    z-index: 1;
 }
 
 .product-card .card-body {
@@ -959,8 +968,13 @@ textarea {
 }
 
 .product-card .card-title {
+    --bs-link-color: #463e3a;
+    --bs-link-hover-color: #FF6721;
     font-size: 1.125rem;
-    color: #463e3a;
+}
+
+.product-card .card-title a {
+    text-decoration: none;
 }
 
 .product-card .product-amount {
@@ -1391,4 +1405,40 @@ textarea {
     --bs-alert-color: #000;
     --bs-alert-bg: #EFFBFF;
     --bs-alert-border-color: #EFFBFF;
+}
+
+.card-img-container {
+    position: relative;
+    background: #fff;
+    border-radius: var(--bs-card-border-radius);
+}
+
+.archive-card .card-stripe {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 5px 22px;
+    color: #463E3A;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    background: #ffe9e0;
+    z-index: 1;
+}
+
+.archive-card .card-img-container img {
+    opacity: 0.6;
+}
+
+.archive-card .btn {
+    pointer-events: none;
+}
+
+.card-timer {
+    display: flex;
+    gap: 0.5rem;
+    padding: 14px 22px;
+    background: #FFE9E0;
 }
