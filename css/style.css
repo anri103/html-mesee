@@ -1386,3 +1386,9 @@ textarea {
     --bs-nav-link-color: #786962;
     --bs-nav-link-hover-color: #FF6721;
 }
+
+.alert-info {
+    --bs-alert-color: #000;
+    --bs-alert-bg: #EFFBFF;
+    --bs-alert-border-color: #EFFBFF;
+}
