@@ -119,8 +119,85 @@ textarea {
     box-shadow: none !important;
 }
 
+/* Check and radio */
+
+
+
+/* Other fields */
+
 .phone-group .form-select {
     max-width: 90px;
+}
+
+.filter-check.form-check-input {
+    width: 22px;
+    height: 22px;
+    margin-top: 0;
+    border-color: #FFC7AE;
+    background-size: auto;
+}
+
+.filter-check.form-check-input:checked {
+    background-color: #FFEFE8;
+    border-color: #FFC7AE;
+}
+
+.filter-check.form-check-input:checked[type=radio],
+.filter-check.form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='10' height='10' rx='1' fill='%23FF6721'/%3E%3C/svg%3E");
+}
+
+.filter-check.form-check-input:focus {
+    border-color: #FFC7AE;
+    box-shadow: none;
+    background-color: #FFEFE8;
+}
+
+.btn-filter {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-filter input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.btn-filter .btn-filter-body {
+    position: relative;
+    width: 125px;
+    padding: 4px 10px;
+    color: #786962;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.btn-filter input[type="radio"]:checked+.btn-filter-body {
+    color: #FF6721;
+    border: 1px solid #FFC7AE;
+}
+
+.filters-section .form-select {
+    max-width: 165px;
+    padding-right: 1.75rem;
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
+    border-radius: 0 !important;
+    background-color: transparent;
+    background-position: right 0.5rem center;
+}
+
+.filters-section .price-input {
+    max-width: 125px;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -901,6 +978,7 @@ textarea {
 
 .whyUs-step-item {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -917,27 +995,41 @@ textarea {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    transform: rotate(90deg);
 }
 
 .whyUs-step-item img {
     flex-shrink: 0;
     max-width: 100%;
-    width: 48px;
-    height: 48px;
+    width: 65px;
+    height: 65px;
 }
 
 .whyUs-step-text {
     max-width: 230px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .whyUs-step-item {
+        flex-direction: row;
+    }
+
+    .whyUs-step-item::after {
+        transform: rotate(0deg);
+    }
+
+    .whyUs-step-item img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .whyUs-step-text {
+        text-align: left;
+    }
 }
 
 /* section-newAnnouncements */
-
-.newAnnouncements .products-container {
-    margin-top: 48px;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 48px;
-}
 
 .product-card {
     --bs-card-border-width: 2px;
@@ -950,7 +1042,7 @@ textarea {
     border-color: #FF6C38;
 }
 
-.product-card .card-badge {
+.card-badge {
     position: absolute;
     top: 30px;
     left: 0;
@@ -1019,10 +1111,6 @@ textarea {
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.5;
-}
-
-.newAnnouncements>button {
-    margin-top: 64px;
 }
 
 /* section-categories */
@@ -1442,3 +1530,4 @@ textarea {
     padding: 14px 22px;
     background: #FFE9E0;
 }
+
