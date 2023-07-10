@@ -1072,7 +1072,7 @@ textarea {
 
 .product-amount {
     font-size: 1.125rem;
-    line-height: 1.5;
+    line-height: 1.3;
     color: #786962;
 }
 
@@ -1081,6 +1081,10 @@ textarea {
     text-transform: lowercase;
     font-size: 0.875rem;
     font-weight: 700;
+}
+
+.product-price {
+    color: #FF6721;
 }
 
 .product-feature-list {
@@ -1104,13 +1108,6 @@ textarea {
     text-transform: uppercase;
     color: #786962;
 } */
-
-.product-card .product-price {
-    margin-top: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .product-card .product-price p {
     color: #ad9d95;
