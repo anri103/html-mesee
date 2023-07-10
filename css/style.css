@@ -30,6 +30,7 @@ Version: 1.0
     --bs-body-bg: #faf9f9;
     --bs-link-color: #FF6721;
     --bs-link-hover-color: #FF996C;
+    --swiper-theme-color: #FF6721;
 }
 
 html {
@@ -1052,7 +1053,7 @@ textarea {
     font-weight: 700;
     font-size: 0.875rem;
     background: #ffe9e0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .product-card .card-body {
@@ -1069,29 +1070,40 @@ textarea {
     text-decoration: none;
 }
 
-.product-card .product-amount {
+.product-amount {
     font-size: 1.125rem;
     line-height: 1.5;
     color: #786962;
 }
 
-.product-card .product-amount .in-stock {
+.product-amount .in-stock {
     color: #1bce51;
     text-transform: lowercase;
     font-size: 0.875rem;
     font-weight: 700;
 }
 
-.product-card .product-feature p {
+.product-feature-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.product-feature-list li {
+    text-transform: uppercase;
+}
+
+.product-feature-list li span {
     color: #ad9d95;
     font-size: 0.875rem;
     margin-bottom: 10px;
+    text-transform: lowercase;
 }
 
-.product-card .product-feature p span {
+/* .product-feature-list p span {
     text-transform: uppercase;
     color: #786962;
-}
+} */
 
 .product-card .product-price {
     margin-top: 1px;
@@ -1531,3 +1543,59 @@ textarea {
     background: #FFE9E0;
 }
 
+.productsSwiper .swiper-slide {
+    height: auto;
+}
+
+.productsSwiper .product-card {
+    height: 100%;
+}
+
+.product-card-horizontal {
+    --bs-card-spacer-y: 0;
+    --bs-card-spacer-x: 0;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-color: transparent;
+}
+
+.product-card-horizontal .card-img {
+    border-radius: 0;
+}
+
+.productPreviewSwiper .swiper-wrapper {
+    margin-bottom: 38px;
+}
+
+.productPreviewSwiper .swiper-button-next,
+.productPreviewSwiper .swiper-button-prev {
+    width: 44px;
+    height: 34px;
+    margin-top: calc(0px - (34px/ 2));
+    border-radius: 34px;
+    background-color: #fff;
+}
+
+.productPreviewSwiper .swiper-button-next::after,
+.productPreviewSwiper .swiper-button-prev::after {
+    font-size: 12px;
+}
+
+.productPreviewSwiper .swiper-button-next {
+    right: -17px;
+}
+
+.productPreviewSwiper .swiper-button-prev {
+    left: -17px;
+}
+
+@media (min-width: 992px) {
+    .product-card-horizontal {
+        gap: 2rem;
+        flex-direction: row;
+    }
+
+    .product-card-horizontal .card-img-container {
+        width: 275px;
+    }
+}
