@@ -282,16 +282,16 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 40px;
-    bottom: 40px;
-    z-index: 2;
+    right: 12px;
+    bottom: 75px;
+    z-index: 1053;
 }
 
 .btn-callback:hover {
     border-color: rgba(0, 133, 160, 0.18);
 }
 
-.section-breadcrumbs .btn-svg {
+.btn-svg {
     --bs-btn-active-color: #786962;
     --bs-btn-active-bg: transparent;
     --bs-btn-active-border-color: transparent;
@@ -300,12 +300,21 @@ textarea {
     gap: 0.5rem;
 }
 
-.section-breadcrumbs .btn-svg.active .compare-svg path {
+.btn-svg.active .compare-svg path {
     fill: #1BCE51;
 }
 
-.section-breadcrumbs .btn-svg.active .wishlist-svg path {
+.btn-svg.active .wishlist-svg path {
     fill: #FFDF5F;
+}
+
+.header .btn-svg {
+    text-transform: uppercase;
+}
+
+.btn-category {
+    --bs-btn-color: #ff6721;
+    --bs-btn-hover-color: #FF996C;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -541,7 +550,6 @@ textarea {
 }
 
 .header_navbar_contacts {
-    text-align: right;
     line-height: 1;
 }
 
@@ -549,7 +557,6 @@ textarea {
     color: #ff6721;
     font-weight: 700;
     font-size: 1.125rem;
-    line-height: 1;
     text-decoration: none;
 }
 
@@ -567,12 +574,9 @@ textarea {
         --bs-dropdown-border-width: 0;
         margin-top: 0.75rem;
     }
-    .lang_select .dropdown-menu {
-        margin-top: 1.15rem;
-    }
 
-    .header_navbar_contacts {
-        margin-left: 3rem;
+    .lang_select .dropdown-menu {
+        margin-top: 0.75rem;
     }
 }
 
@@ -834,6 +838,111 @@ textarea {
     object-fit: cover;
 }
 
+/*------------------------------------------------------------------
+[ Footer mobile menu ]*/
+
+.appBottomMenu {
+    min-height: 56px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #E1E1E1;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.appBottomMenu .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    transition: none;
+    color: #786962;
+    outline: 0 !important;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1.2em;    
+}
+
+.appBottomMenu .item:before {
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 0 0 10px 10px;
+    background: transparent;
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    top: 0;
+}
+
+.appBottomMenu .item.active {
+    color: #FF6721;
+}
+
+.appBottomMenu .item .col {
+    width: 100%;
+    padding: 0 4px;
+    text-align: center;
+}
+
+.appBottomMenu .item .icon {
+    display: block;
+    margin: 0 auto;
+    transition: none;
+}
+
+.appBottomMenu .item strong {
+    margin-top: 4px;
+    display: block;
+    font-weight: 400;
+    transition: none;
+}
+
+.appBottomMenu .item.active .icon-categories path {
+    fill: #FF6721;
+}
+
+.appBottomMenu .item.active .icon-wishlist path {
+    stroke: #FF6721;
+}
+
+.appBottomMenu .item.active .icon-search path {
+    stroke: #FF6721;
+}
+
+.appBottomMenu .item.active .icon-profile path {
+    fill: #FF6721;
+}
+
+.appBottomMenu .item .action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #FF6822, #FF976A);
+}
+
+@media (min-width: 992px) {
+    .appBottomMenu {
+        display: none;
+    }
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ CONTENT SECTIONS ]*/
 
@@ -873,14 +982,6 @@ textarea {
 
 .breadcrumb a {
     text-decoration: none;
-}
-
-.section-breadcrumbs .buttons-container a {
-    text-decoration: none;
-}
-
-.section-breadcrumbs .buttons-container .btn-svg.active {
-
 }
 
 /* section-hero */

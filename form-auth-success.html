@@ -19,7 +19,6 @@
     <header class="header">
         <div class="header_top d-none d-lg-block">
             <div class="container">
-
                 <div class="row align-items-center">
                     <div class="col-lg-2">
                         <div class="site-logo">
@@ -29,7 +28,6 @@
                             <div class="tagline">поиск оборудования</div>
                         </div>
                     </div>
-
                     <div class="col">
                         <form class="search-form" action="#">
                             <div class="position-relative d-flex align-items-center">
@@ -56,11 +54,9 @@
                             </div>
                         </form>
                     </div>
-
                     <div class="col-lg-2">
                         <a class="btn btn-primary" href="#">начните продавать</a>
                     </div>
-
                     <div class="col-lg-2">
                         <div class="header_auth">
                             <div class="d-flex align-items-start gap-2">
@@ -98,21 +94,21 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+
         <div class="header_bottom">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-    
+
                     <!-- Мобильный логотип -->
                     <div class="site-logo d-lg-none">
                         <img src="img/de3736f6c53dce856381.svg" alt="messe.ru" />
                     </div>
-    
+
                     <!-- Мобильные иконки -->
                     <div class="d-lg-none">
-                        <ul class="list-inline mb-0 d-flex align-items-center">
+                        <ul class="list-inline mb-0 d-flex gap-2 align-items-center">
                             <!-- Телефон -->
                             <li class="list-inline-item">
                                 <a class="nav-link p-1" href="tel:88002220032">
@@ -121,33 +117,35 @@
                                     </svg>
                                 </a>
                             </li>
-                            <!-- Личный кабинет -->
+                            <!-- Выбор языка -->
                             <li class="list-inline-item">
-                                <a class="nav-link p-1" href="#login_modal" data-bs-toggle="modal">
-                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12.3562" cy="11.5" r="10.9" stroke="#786962" stroke-width="1.2" />
-                                        <circle cx="12.3562" cy="8.21419" r="3.23333" stroke="#786962" stroke-width="1.2" />
-                                        <path
-                                            d="M4.14197 18.619C4.14197 18.619 6.07474 13.1428 12.3563 13.1428C18.6378 13.1428 20.5705 18.619 20.5705 18.619"
-                                            stroke="#786962" stroke-width="1.2" />
-                                    </svg>
-                                </a>
+                                <div class="lang_select dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                                <span>RU</span>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                                <span>RU</span>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                                <span>RU</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
-                            <!-- Поиск -->
-                            <li class="list-inline-item">
-                                <a class="nav-link p-1" href="#searchForm" data-bs-toggle="offcanvas"
-                                    aria-controls="searchForm">
-                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#786962" stroke-width="1.37"
-                                            stroke-linecap="round" stroke-linejoin="round"></circle>
-                                        <path d="M18.7691 19.2549L22.4399 22.9162" stroke="#786962" stroke-width="1.37"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- Меню -->
+                            <!-- Меню тогглер -->
                             <li class="list-inline-item">
                                 <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
                                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -164,9 +162,11 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <!-- Десктопное мегаменю -->
                         <div class="dropdown dropdown-fullwidth d-none d-lg-block">
-                            <button type="button" class="btn btn-text px-0" data-bs-toggle="dropdown"
+                            <button type="button" class="btn btn-svg btn-category border-0 px-0" data-bs-toggle="dropdown"
                                 aria-expanded="false" data-bs-auto-close="outside">
-                                <img src="img/844f8d501865db251891.svg" alt="категории" />
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4577 6.51692C19.1355 6.13423 19.1355 5.15803 18.4577 4.77534L10.4917 0.277598C10.1866 0.105315 9.81352 0.105314 9.50838 0.277596L1.54228 4.77534C0.86449 5.15803 0.864489 6.13423 1.54228 6.51692L9.50838 11.0147C9.81352 11.187 10.1866 11.187 10.4917 11.0147L18.4577 6.51692ZM0.521737 10.5405C0.785425 10.0492 1.40457 9.85999 1.89225 10.1303L9.51541 14.3562C9.81701 14.5234 10.1835 14.5234 10.4851 14.3562L18.1082 10.1303C18.5959 9.85998 19.215 10.0492 19.4787 10.5405C19.7374 11.0225 19.5653 11.6311 19.0869 11.8963L10.4777 16.6688C10.1807 16.8334 9.81979 16.8334 9.52275 16.6688L0.913581 11.8963C0.435189 11.6311 0.263072 11.0225 0.521737 10.5405ZM0.521737 15.6071C0.785425 15.1158 1.40457 14.9265 1.89225 15.1969L9.51541 19.4227C9.81701 19.5899 10.1835 19.5899 10.4851 19.4227L18.1082 15.1969C18.5959 14.9265 19.215 15.1158 19.4787 15.607C19.7374 16.089 19.5653 16.6977 19.0869 16.9629L10.4777 21.7353C10.1807 21.9 9.81979 21.9 9.52275 21.7353L0.913581 16.9629C0.435189 16.6977 0.263072 16.089 0.521737 15.6071Z" fill="#FF6721"/>
+                                </svg>
                                 <span>категории</span>
                             </button>
                             <div class="dropdown-menu">
@@ -303,41 +303,109 @@
                                 <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
                             </ul>
                         </div>
-                        <!-- Триггер для Всплывающего Мобильного меню категорий -->
-                        <button type="button" class="catalog-trigger btn btn-primary w-100 d-lg-none" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasCatalog" aria-controls="offcanvasCatalog">
-                            <span>Категории</span>
-                        </button>
-                        <!-- Выбор языка -->
-                        <div class="lang_select dropdown d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
-                                        <span>RU</span>
-                                    </div>
+
+                        <!-- Элементы мобильного меню -->
+                        <div class="d-lg-none">
+                            
+                            <div class="d-flex gap-2 flex-column border-top pt-3 mt-3">
+                                <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+                                <a class="btn btn-svg border-0 px-0 active" href="#">
+                                    <svg class="compare-svg" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2C20 0.89543 19.1046 0 18 0C16.8954 0 16 0.895431 16 2V17C16 18.1046 16.8954 19 18 19C19.1046 19 20 18.1046 20 17V2ZM10 4C11.1046 4 12 4.89543 12 6L12 17C12 18.1046 11.1046 19 10 19C8.89543 19 8 18.1046 8 17L8 6C8 4.89543 8.89543 4 10 4ZM2 9C3.10457 9 4 9.89543 4 11L4 17C4 18.1046 3.10457 19 2 19C0.895431 19 0 18.1046 0 17V11C0 9.89543 0.895431 9 2 9Z" fill="#DEDEDE"></path>
+                                    </svg>
+                                    <span>СРАВНИТЬ</span>
+                                    <span class="badge text-bg-light">3</span>
                                 </a>
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
-                                        <span>RU</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
-                                        <span>RU</span>
-                                    </div>
+                                <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+                                <a class="btn btn-svg border-0 px-0" href="#">
+                                    <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#DEDEDE"></path>
+                                    </svg>
+                                    <span>ИЗБРАННОЕ</span>
+                                    <span class="badge text-bg-light">3</span>
                                 </a>
                             </div>
+
+                            <div class="d-flex gap-4 flex-column border-top pt-3 mt-3">
+                                <div class="header_auth">
+                                    <div class="d-flex align-items-start gap-2 py-2">
+                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_459_591)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62299 3.25C9.62299 5.04493 8.2312 6.5 6.51433 6.5C4.79746 6.5 3.40566 5.04493 3.40566 3.25C3.40566 1.45507 4.79746 0 6.51433 0C8.2312 0 9.62299 1.45507 9.62299 3.25ZM0.531444 12.125C1.32371 9.48786 3.73045 7.89288 6.51434 7.89288C9.29818 7.89288 11.6592 9.48786 12.4514 12.125C12.6193 12.6836 12.3205 13 12.0371 13H0.991594C0.708161 13 0.399429 12.5644 0.531444 12.125Z" fill="#463E3A"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_459_591">
+                                                    <rect width="13" height="13" fill="white" transform="translate(0.5)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <a class="text-uppercase" href="#login_modal" data-bs-toggle="modal">войти / регистрация</a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 flex-column">
+                                    <div class="header_navbar_contacts">
+                                        <a href="tel:88002220032">8 (800)-222-00-32</a>
+                                        <div class="tagline">звонок по России бесплатный</div>
+                                    </div>
+    
+                                    <div class="header_auth">
+                                        <div class="d-flex align-items-start gap-2">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_459_597)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2.43478C0.5 1.64237 1.1236 1 1.89286 1H12.1071C12.8764 1 13.5 1.64237 13.5 2.43478V2.76187L7.35601 6.9819C7.26936 7.03929 7.14358 7.08025 6.99999 7.08025C6.85641 7.08025 6.73063 7.03929 6.64398 6.9819L0.5 2.76187V2.43478ZM0.5 4.19894V10.5652C0.5 11.3576 1.1236 12 1.89286 12H12.1071C12.8764 12 13.5 11.3576 13.5 10.5652V4.19893L7.99673 7.97889L7.99138 7.98256C7.6992 8.17847 7.34833 8.27591 6.99999 8.27591C6.65166 8.27591 6.3008 8.17844 6.00863 7.98253L6.00324 7.97892L0.5 4.19894Z" fill="#463E3A"></path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_459_597">
+                                                        <rect width="13" height="13" fill="white" transform="translate(0.5)"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <a href="mailto:info@mesee.ru">info@mesee.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mb-3">
+                                <a class="btn btn-primary w-100" href="#">начните продавать</a>
+                            </div>
+
                         </div>
-                        <!-- Контакты -->
-                        <div class="header_navbar_contacts d-none d-lg-block">
-                            <a href="tel:88002220032">8 (800)-222-00-32</a>
-                            <div class="tagline">звонок по России бесплатный</div>
+
+                        <div class="d-none d-lg-flex gap-5">
+                            <!-- Выбор языка -->
+                            <div class="lang_select dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                            <span>RU</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                            <span>RU</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <img src="img/52b922f83f5eaa3c3b1c.svg" alt="русский" />
+                                            <span>RU</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Контакты -->
+                            <div class="header_navbar_contacts text-end">
+                                <a href="tel:88002220032">8 (800)-222-00-32</a>
+                                <div class="tagline">звонок по России бесплатный</div>
+                            </div>
                         </div>
                     </div>
     
@@ -506,7 +574,7 @@
                             </ol>
                         </nav>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 d-none d-lg-block">
                         <div class="buttons-container d-flex gap-3 justify-content-lg-end">
                             <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
                             <a class="btn btn-svg px-0 active" href="#">
@@ -936,6 +1004,67 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- ////////////////// -->
+    <!-- Footer mobile menu -->
+    <!-- ////////////////// -->
+
+    <div class="appBottomMenu">
+        <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+        <a class="item active" href="#offcanvasCatalog" data-bs-toggle="offcanvas" aria-controls="offcanvasCatalog">
+            <div class="col">
+                <svg class="icon icon-categories" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4577 6.51692C19.1355 6.13423 19.1355 5.15803 18.4577 4.77534L10.4917 0.277598C10.1866 0.105315 9.81352 0.105314 9.50838 0.277596L1.54228 4.77534C0.86449 5.15803 0.864489 6.13423 1.54228 6.51692L9.50838 11.0147C9.81352 11.187 10.1866 11.187 10.4917 11.0147L18.4577 6.51692ZM0.521737 10.5405C0.785425 10.0492 1.40457 9.85999 1.89225 10.1303L9.51541 14.3562C9.81701 14.5234 10.1835 14.5234 10.4851 14.3562L18.1082 10.1303C18.5959 9.85998 19.215 10.0492 19.4787 10.5405V10.5405C19.7374 11.0225 19.5653 11.6311 19.0869 11.8963L10.4777 16.6688V16.6688C10.1807 16.8334 9.81979 16.8334 9.52275 16.6688V16.6688L0.913581 11.8963C0.435188 11.6311 0.263072 11.0225 0.521737 10.5405V10.5405ZM0.521737 15.6071C0.785425 15.1158 1.40457 14.9265 1.89225 15.1969L9.51541 19.4227C9.81701 19.5899 10.1835 19.5899 10.4851 19.4227L18.1082 15.1969C18.5959 14.9265 19.215 15.1158 19.4787 15.607V15.607C19.7374 16.089 19.5653 16.6977 19.0869 16.9629L10.4777 21.7353V21.7353C10.1807 21.9 9.81979 21.9 9.52275 21.7353V21.7353L0.913581 16.9629C0.435188 16.6977 0.263072 16.089 0.521737 15.6071V15.6071Z" fill="#786962"/>
+                </svg>
+                <strong>Категории</strong>
+            </div>
+        </a>
+        <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+        <a class="item" href="#">
+            <div class="col">
+                <svg class="icon icon-wishlist" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.411 2.11831C10.7538 1.06341 12.2462 1.06341 12.589 2.11831L13.7178 5.59248C14.1 6.76881 15.1962 7.56524 16.4331 7.56524H20.086C21.1952 7.56524 21.6564 8.98459 20.759 9.63656L17.8037 11.7837C16.8031 12.5107 16.3844 13.7994 16.7666 14.9757L17.8954 18.4499C18.2382 19.5048 17.0308 20.382 16.1334 19.73L13.1781 17.5829C12.1775 16.8559 10.8225 16.8559 9.82187 17.5829L6.86657 19.73C5.96922 20.382 4.76184 19.5048 5.10459 18.4499L6.23342 14.9757C6.61563 13.7994 6.19692 12.5107 5.19628 11.7837L2.24098 9.63656C1.34362 8.9846 1.8048 7.56524 2.91399 7.56524H6.56695C7.80381 7.56524 8.9 6.7688 9.28221 5.59248L10.411 2.11831Z" stroke="#786962" stroke-width="1.71"/>
+                </svg>
+                <strong>Избранное</strong>
+            </div>
+        </a>
+        <a class="item" href="#">
+            <div class="col">
+                <div class="action-button">
+                    <svg class="icon icon-plus" width="21" height="21" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.77444 9.7877C9.77444 9.7877 9.77444 6.85916 9.77444 1.00207C9.77444 0.449788 10.2218 0 10.7741 0C11.1606 0 11.6593 0 12.27 0C12.8222 0 13.2701 0.446075 13.2701 0.99836C13.2701 2.41676 13.2701 5.34654 13.2701 9.7877C13.2701 9.7877 16.1794 9.7877 21.998 9.7877C22.5503 9.7877 23 10.2346 23 10.7869C23 11.1392 23 11.5847 23 12.1234C23 12.6756 22.5541 13.1239 22.0018 13.1239C20.5896 13.1239 17.679 13.1239 13.2701 13.1239C13.2701 13.1239 13.2701 16.0819 13.2701 21.9979C13.2701 22.5501 12.8227 23 12.2704 23C11.8839 23 11.3853 23 10.7746 23C10.2223 23 9.77444 22.5537 9.77444 22.0014C9.77444 20.5735 9.77444 17.6144 9.77444 13.1239C9.77444 13.1239 6.85032 13.1239 1.00206 13.1239C0.449776 13.1239 0 12.677 0 12.1247C0 11.7724 0 11.3269 0 10.7883C0 10.236 0.446041 9.7877 0.998326 9.7877C2.4153 9.7877 5.34068 9.7877 9.77444 9.7877Z" fill="white"/>
+                    </svg>
+                </div>
+                <strong>Объявление</strong>
+            </div>
+        </a>
+        <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+        <a class="item" href="#searchForm" data-bs-toggle="offcanvas" aria-controls="searchForm">
+            <div class="col">
+                <svg class="icon icon-search" width="21" height="21" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_783_6616)">
+                    <path d="M10.5 20C15.7467 20 20 15.7467 20 10.5C20 5.2533 15.7467 1 10.5 1C5.2533 1 1 5.2533 1 10.5C1 15.7467 5.2533 20 10.5 20Z" stroke="#786962" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23 23L17 17" stroke="#786962" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_783_6616">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                <strong>Поиск</strong>
+            </div>
+        </a>
+        <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
+        <a class="item" href="#login_modal" data-bs-toggle="modal">
+            <div class="col">
+                <svg class="icon icon-profile" width="21" height="21" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.37 1.72489C6.49086 1.72489 1.72483 6.49092 1.72483 12.3701C1.72483 15.1588 2.79713 17.697 4.5519 19.5949C5.15964 18.3926 6.14424 17.3596 7.38561 16.5928C8.91666 15.6472 10.7728 15.145 12.6668 15.145C14.5608 15.145 16.417 15.6472 17.948 16.5928C19.044 17.2698 19.9398 18.1543 20.5528 19.1795C22.0904 17.3339 23.0153 14.96 23.0153 12.3701C23.0153 6.49092 18.2492 1.72489 12.37 1.72489ZM21.1014 21.1117C23.3402 18.8754 24.7253 15.7845 24.7253 12.3701C24.7253 5.54651 19.1936 0.0148926 12.37 0.0148926C5.54645 0.0148926 0.0148315 5.54651 0.0148315 12.3701C0.0148315 19.1937 5.54645 24.7253 12.37 24.7253C15.5659 24.7253 18.4784 23.5119 20.6718 21.5207C20.8651 21.4378 21.014 21.2899 21.1014 21.1117ZM19.298 20.4527C18.8527 19.5272 18.0869 18.6885 17.0494 18.0477C15.8081 17.281 14.2673 16.855 12.6668 16.855C11.0663 16.855 9.52556 17.281 8.28421 18.0477C7.11479 18.77 6.29054 19.7437 5.88133 20.8098C7.67757 22.1929 9.92776 23.0153 12.37 23.0153C15.0158 23.0153 17.4361 22.0501 19.298 20.4527ZM12.3698 6.83601C10.7249 6.83601 9.39143 8.16949 9.39143 9.81441C9.39143 11.4593 10.7249 12.7928 12.3698 12.7928C14.0148 12.7928 15.3482 11.4593 15.3482 9.81441C15.3482 8.16949 14.0148 6.83601 12.3698 6.83601ZM7.68143 9.81441C7.68143 7.22508 9.7805 5.12601 12.3698 5.12601C14.9592 5.12601 17.0582 7.22508 17.0582 9.81441C17.0582 12.4037 14.9592 14.5028 12.3698 14.5028C9.7805 14.5028 7.68143 12.4037 7.68143 9.81441Z" fill="#786962"/>
+                </svg>
+                <strong>Профиль</strong>
+            </div>
+        </a>
     </div>
 
     <!-- Scripts -->
