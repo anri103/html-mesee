@@ -1605,6 +1605,12 @@ textarea {
     --bs-alert-border-color: #EFFBFF;
 }
 
+.alert-success {
+    --bs-alert-color: #463E3A;
+    --bs-alert-bg: #F8FFEA;
+    --bs-alert-border-color: #F8FFEA;
+}
+
 .card-img-container {
     position: relative;
     background: #fff;
@@ -1696,4 +1702,54 @@ textarea {
     .product-card-horizontal .card-img-container {
         width: 275px;
     }
+}
+
+/* Сравнение товаров */
+
+.compare__empty-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #463E3A;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #d2d5db;
+    margin-bottom: 2.65em;
+}
+
+.compare__add-link {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    color: #85898C;
+    transition: box-shadow 0.25s;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.compare__add-link_big {
+    justify-content: center;
+    width: 242px;
+    height: 412px;
+    text-align: center;
+}
+
+.compare__add-link span::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #F0F2F4;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjcuNSIgeTE9IjIuMTg1NThlLTA4IiB4Mj0iNy41IiB5Mj0iMTYiIHN0cm9rZT0iIzg1ODk4QyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMCA4SDE2IiBzdHJva2U9IiM4NTg5OEMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.compare__add-link_big span::before {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    background-size: 1em auto;
 }
