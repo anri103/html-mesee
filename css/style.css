@@ -186,7 +186,7 @@ textarea {
     border: 1px solid #FFC7AE;
 }
 
-.filters-section .form-select {
+.filters-section .bordered-select {
     max-width: 165px;
     padding-right: 1.75rem;
     border-top-width: 0 !important;
@@ -424,6 +424,10 @@ textarea {
 
 .z-index-5 {
     z-index: 5 !important;
+}
+
+.fs-6 {
+    font-size: 1.125rem!important;
 }
 
 .section-top {
@@ -1734,6 +1738,40 @@ textarea {
 
 .product-card-horizontal .card-img {
     border-radius: 0;
+}
+
+.product-card-horizontal .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-card-horizontal .card-title a {
+    text-decoration: none;
+}
+
+.product-card-horizontal .btn.active .compare-svg path {
+    fill: #1BCE51;
+}
+
+.product-card-horizontal .btn.active .wishlist-svg path {
+    fill: #FFDF5F;
+}
+
+.product-params-table .table {
+    font-size: 0.875rem;
+}
+
+.product-params-table .table td:first-child {
+    color: #AD9D95;
+}
+
+.product-params-table .table td:last-child {
+    text-align: right;
+}
+
+.product-params-table .table>:not(caption)>*>* {
+    border-style: dashed;
 }
 
 .productPreviewSwiper .swiper-wrapper {

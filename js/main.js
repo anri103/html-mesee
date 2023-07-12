@@ -21,7 +21,7 @@ Fancybox.bind("[data-fancybox]", {
 
 const feedbackSwiper = new Swiper(".feedbackSwiper", {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 15,
   loop: true,
   navigation: {
     nextEl: ".feedback-next",
@@ -61,6 +61,8 @@ const productPreviewSwiper = new Swiper(".productPreviewSwiper", {
   spaceBetween: 15,
   loop: true,
   grabCursor: true,
+  // preloadImages: false,
+  lazy: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
