@@ -603,7 +603,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="sidebar sidebar-left">
-                            <div class="sidebar-widget">
+                            <div class="sidebar-widget categories-widget d-none d-lg-block">
                                 <div class="bg-white rounded-3 p-3">
                                     <ul class="category-nav nav flex-column">
                                         <li class="nav-item">
@@ -714,7 +714,7 @@
                                         <div>
                                             <h3 class="section-title text-black">Есть вопрос?</h3>
                                             <p>просто оставьте телефон и наш специалист связеться с вами</p>
-                                            <button class="btn btn-text" data-bs-toggle="modal" data-bs-target="#callback_modal">подробнее</button>
+                                            <button class="btn btn-text text-with-arrow px-0 py-0" data-bs-toggle="modal" data-bs-target="#callback_modal">подробнее</button>
                                         </div>
                                     </div>
                                 </div>
@@ -727,6 +727,7 @@
                             <!-- Фильтры -->
                             <div class="section-block filters-section">
                                 <form action="#">
+
                                     <div class="d-flex gap-4 align-items-center">
                                         <div class="d-flex gap-3 align-items-center">
                                             <label class="btn-filter" for="filter-all-newness">
@@ -755,38 +756,40 @@
                                             </label>
                                         </div>
                                     </div>
+
                                     <div class="d-flex gap-4 flex-wrap align-items-center justify-content-between mt-4">
     
-                                            <div class="d-flex gap-3 align-items-center">
-                                                    <select class="form-select form-select-sm">
-                                                        <option selected>ПРОИЗВОДИТЕЛЬ</option>
-                                                        <option value="1">Один</option>
-                                                        <option value="2">Два</option>
-                                                        <option value="3">Три</option>
-                                                    </select>
-                                                    
-                                                    <select class="form-select form-select-sm">
-                                                        <option selected>СОСТОЯНИЕ</option>
-                                                        <option value="1">Один</option>
-                                                        <option value="2">Два</option>
-                                                        <option value="3">Три</option>
-                                                    </select>
-    
-                                                    <div class="d-flex gap-2 align-items-center">
-                                                        <div class="small">ЦЕНА:</div>
-                                                        <input class="price-input form-control form-control-sm" type="text" placeholder="от" aria-label=".form-control-sm example">
-                                                        <div>-</div>
-                                                        <input class="price-input form-control form-control-sm" type="text" placeholder="до" aria-label=".form-control-sm example">
-                                                    </div>
-                                            </div>
-    
+                                        <div class="d-flex gap-3 align-items-center">
                                             <select class="form-select form-select-sm">
-                                                <option selected>СОРТИРОВАТЬ</option>
-                                                <option value="1">По умолчанию</option>
-                                                <option value="2">По дате</option>
-                                                <option value="3">Дешевле</option>
-                                                <option value="3">Дороже</option>
+                                                <option selected>ПРОИЗВОДИТЕЛЬ</option>
+                                                <option value="1">Один</option>
+                                                <option value="2">Два</option>
+                                                <option value="3">Три</option>
                                             </select>
+                                            
+                                            <select class="form-select form-select-sm">
+                                                <option selected>СОСТОЯНИЕ</option>
+                                                <option value="1">Один</option>
+                                                <option value="2">Два</option>
+                                                <option value="3">Три</option>
+                                            </select>
+
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="small">ЦЕНА:</div>
+                                                <input class="price-input form-control form-control-sm" type="text" placeholder="от" aria-label=".form-control-sm example">
+                                                <div>-</div>
+                                                <input class="price-input form-control form-control-sm" type="text" placeholder="до" aria-label=".form-control-sm example">
+                                            </div>
+                                        </div>
+
+                                        <select class="form-select form-select-sm">
+                                            <option selected>СОРТИРОВАТЬ</option>
+                                            <option value="1">По умолчанию</option>
+                                            <option value="2">По дате</option>
+                                            <option value="3">Дешевле</option>
+                                            <option value="3">Дороже</option>
+                                        </select>
+                                        
                                     </div>
                                 </form>
                             </div>
@@ -944,13 +947,13 @@
                                         <a href="#">Стеллажи паллетные</a>
                                     </p>
                                     <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                    <ul class="product-feature-list">
+                                    <ul class="card-params-list">
                                         <li><span>производитель:</span> ФЗМ</li>
                                         <li><span>страна:</span> россия</li>
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div class="product-price">цена: <span class="text-primary fw-700">1 103 240 ₽</span></div>
-                                        <button class="btn btn-text">купить</button>
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
                                     </div>
                                 </div>
                             </div>
@@ -968,13 +971,13 @@
                                         <a href="#">Стеллажи паллетные</a>
                                     </p>
                                     <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                    <ul class="product-feature-list">
+                                    <ul class="card-params-list">
                                         <li><span>производитель:</span> ФЗМ</li>
                                         <li><span>страна:</span> россия</li>
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div>цена: <span class="text-primary fw-700">1 103 240 ₽</span></div>
-                                        <button class="btn btn-text">купить</button>
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
                                     </div>
                                 </div>
                             </div>
@@ -992,13 +995,13 @@
                                         <a href="#">Стеллажи паллетные</a>
                                     </p>
                                     <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                    <ul class="product-feature-list">
+                                    <ul class="card-params-list">
                                         <li><span>производитель:</span> ФЗМ</li>
                                         <li><span>страна:</span> россия</li>
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div>цена: <span class="text-primary fw-700">1 103 240 ₽</span></div>
-                                        <button class="btn btn-text">купить</button>
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
                                     </div>
                                 </div>
                             </div>
@@ -1016,13 +1019,13 @@
                                         <a href="#">Стеллажи паллетные</a>
                                     </p>
                                     <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                    <ul class="product-feature-list">
+                                    <ul class="card-params-list">
                                         <li><span>производитель:</span> ФЗМ</li>
                                         <li><span>страна:</span> россия</li>
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div>цена: <span class="text-primary fw-700">1 103 240 ₽</span></div>
-                                        <button class="btn btn-text">купить</button>
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
                                     </div>
                                 </div>
                             </div>
@@ -1040,13 +1043,13 @@
                                         <a href="#">Стеллажи паллетные</a>
                                     </p>
                                     <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                    <ul class="product-feature-list">
+                                    <ul class="card-params-list">
                                         <li><span>производитель:</span> ФЗМ</li>
                                         <li><span>страна:</span> россия</li>
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div>цена: <span class="text-primary fw-700">1 103 240 ₽</span></div>
-                                        <button class="btn btn-text">купить</button>
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
                                     </div>
                                 </div>
                             </div>
@@ -1056,7 +1059,7 @@
             </div>
             <div class="container">
                 <div class="text-center mt-5">
-                    <button class="btn btn-text">смотреть все</button>
+                    <a class="btn btn-link link-with-arrow px-0 py-0" href="#">смотреть все</a>
                 </div>
             </div>
         </section>
