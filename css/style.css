@@ -1528,8 +1528,8 @@ textarea {
 
 /* section-page-content */
 
-.sidebar-widget {
-    margin-bottom: 68px;
+.sidebar .sidebar-widget + .sidebar-widget {
+    margin-top: 68px;
 }
 
 .sidebar-block-with-icon {
