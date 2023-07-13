@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Catalog auction - mesee.ru</title>
+    <title>Catalog list v1 - mesee.ru</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -604,6 +604,7 @@
                     <!-- Sidebar -->
                     <div class="col-lg-4">
                         <div class="sidebar sidebar-left">
+                            <!-- Категории только для десктопа -->
                             <div class="sidebar-widget categories-widget d-none d-lg-block">
                                 <div class="bg-white rounded-3 p-3">
                                     <ul class="category-nav nav flex-column">
@@ -725,91 +726,628 @@
                     <!-- Content -->
                     <div class="col-lg-8">
                         <div class="sections-container">
-                            <div class="section-block">
-                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-2">
-                                    <div class="col">
-                                        <div class="card product-card">
-                                            <div class="card-img-container">
-                                                <div class="card-badge">NEW</div>
-                                                <a href="#">
-                                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
-                                                </a>
+
+                            <!-- Фильтры -->
+                            <div class="section-block filters-section">
+                                <form class="d-flex gap-3 flex-column" action="#">
+
+                                    <div class="d-none d-lg-flex gap-4 align-items-center">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <label class="btn-filter" for="filter-all-newness">
+                                                <input type="radio" name="newness" id="filter-all-newness" checked>
+                                                <div class="btn-filter-body">
+                                                    <span>все</span>
+                                                </div>
+                                            </label>    
+                                            <label class="btn-filter" for="filter-newness">
+                                                <input type="radio" name="newness" id="filter-newness">
+                                                <div class="btn-filter-body">
+                                                    <span>новые</span>
+                                                </div>
+                                            </label>    
+                                            <label class="btn-filter" for="filter-not-newness">
+                                                <input type="radio" name="newness" id="filter-not-newness">
+                                                <div class="btn-filter-body">
+                                                    <span>б/у</span>
+                                                </div>
+                                            </label>                                            
+                                        </div>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <input class="filter-check form-check-input" type="checkbox" value="" id="checkInStock">
+                                            <label class="form-check-label" for="checkInStock">
+                                              НА СКЛАДЕ
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex gap-4 flex-wrap align-items-center justify-content-between">
+    
+                                        <div class="d-none d-lg-flex gap-3 align-items-center">
+                                            <select class="form-select bordered-select form-select-sm">
+                                                <option selected>ПРОИЗВОДИТЕЛЬ</option>
+                                                <option value="1">Один</option>
+                                                <option value="2">Два</option>
+                                                <option value="3">Три</option>
+                                            </select>
+                                            
+                                            <select class="form-select bordered-select form-select-sm">
+                                                <option selected>СОСТОЯНИЕ</option>
+                                                <option value="1">Один</option>
+                                                <option value="2">Два</option>
+                                                <option value="3">Три</option>
+                                            </select>
+
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="small">ЦЕНА:</div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <select class="form-select price-input form-select-sm">
+                                                        <option selected>от</option>
+                                                        <option value="1">10 000</option>
+                                                        <option value="2">100 000</option>
+                                                        <option value="3">1 000 000</option>
+                                                        <option value="4">10 000 000</option>
+                                                        <option value="5">100 000 000</option>
+                                                    </select>
+                                                    <div>-</div>
+                                                    <select class="form-select price-input form-select-sm">
+                                                        <option selected>до</option>
+                                                        <option value="1">10 000</option>
+                                                        <option value="2">100 000</option>
+                                                        <option value="3">1 000 000</option>
+                                                        <option value="4">10 000 000</option>
+                                                        <option value="5">100 000 000</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="card-timer">
-                                                <div>На аукционе: </div>
-                                                <div class="text-primary fw-700">20:09:09 сек</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="d-flex align-items-center gap-2 mb-3">
-                                                    <div>
-                                                        <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M16.5349 24.4942C16.63 24.4942 16.7078 24.5714 16.6993 24.6661C16.6479 25.2362 16.3419 25.7748 15.8333 26.1816C15.2739 26.6292 14.5151 26.8806 13.724 26.8806C12.9328 26.8806 12.1741 26.6292 11.6147 26.1816C11.1061 25.7748 10.8001 25.2362 10.7487 24.6661C10.7402 24.5714 10.818 24.4942 10.9131 24.4942L13.724 24.4942L16.5349 24.4942Z" fill="#463E3A"/>
-                                                            <path d="M6.45691 9.86782C6.45691 5.8541 9.71067 2.60034 13.7244 2.60034C17.7381 2.60034 20.9919 5.8541 20.9919 9.86782V13.1155C20.9919 13.4803 20.9919 13.6627 20.9989 13.842C21.0541 15.2527 21.4339 16.6317 22.1088 17.8718C22.1946 18.0294 22.288 18.1861 22.4748 18.4994L23.5914 20.3727C24.0501 21.1423 24.2795 21.527 24.1145 21.8174C23.9496 22.1077 23.5016 22.1077 22.6057 22.1077H4.8431C3.9472 22.1077 3.49925 22.1077 3.33431 21.8174C3.16937 21.527 3.39872 21.1423 3.85743 20.3727L4.97405 18.4994C5.16084 18.186 5.25423 18.0294 5.34001 17.8717C6.01492 16.6317 6.39472 15.2527 6.44989 13.842C6.45691 13.6627 6.45691 13.4803 6.45691 13.1155V9.86782Z" fill="#463E3A"/>
-                                                            <circle cx="13.7247" cy="2.60028" r="2.29499" fill="#463E3A"/>
-                                                            <path d="M2.2627 5.64832C2.2627 5.64832 1.06531 7.54417 1.06531 10.205C1.06531 12.8659 2.26269 14.8283 2.26269 14.8283" stroke="#463E3A" stroke-width="1.96221" stroke-linecap="round"/>
-                                                            <path d="M24.9473 14.8282C24.9473 14.8282 26.1446 12.9324 26.1446 10.2715C26.1446 7.61068 24.9473 5.64831 24.9473 5.64831" stroke="#463E3A" stroke-width="1.96221" stroke-linecap="round"/>
-                                                        </svg>
+                                        </div>
+
+                                        <div class="d-lg-none">
+                                            <button type="button" class="btn btn-svg border-0 px-0 py-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">
+                                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50431 4.55273C7.50431 2.99446 6.21904 1.71 4.60718 1.71C2.99532 1.71 1.71004 2.99446 1.71004 4.55273C1.71004 6.111 2.99532 7.39546 4.60718 7.39546C6.21904 7.39546 7.50431 6.111 7.50431 4.55273ZM4.60718 0C6.6558 0 8.40466 1.32601 8.99829 3.16982L20.3593 3.16982C20.8315 3.16982 21.2143 3.55261 21.2143 4.02482C21.2143 4.49702 20.8315 4.87982 20.3593 4.87982L9.20264 4.87982C9.03275 7.25154 7.02951 9.10546 4.60718 9.10546C2.07454 9.10546 3.88246e-05 7.07887 3.89366e-05 4.55273C3.90487e-05 2.0266 2.07454 0 4.60718 0ZM0.855 13.7347C0.382796 13.7347 0 14.1174 0 14.5897C0 15.0619 0.382797 15.4447 0.855 15.4447L12.855 15.4446C12.9059 15.4446 12.9558 15.4402 13.0043 15.4317C13.5939 17.2822 15.3462 18.6145 17.3996 18.6145C19.9322 18.6145 22.0067 16.5879 22.0067 14.0617C22.0067 11.5356 19.9322 9.50901 17.3996 9.50901C14.9773 9.50901 12.974 11.3629 12.8041 13.7346L0.855 13.7347ZM17.3996 11.219C19.0115 11.219 20.2967 12.5035 20.2967 14.0617C20.2967 15.62 19.0115 16.9045 17.3996 16.9045C15.7878 16.9045 14.5025 15.62 14.5025 14.0617C14.5025 12.5035 15.7878 11.219 17.3996 11.219Z" fill="#AD9D95"/>
+                                                </svg>
+                                                <span class="small text-uppercase">Фильтр</span>
+                                            </button>
+                                        </div>
+
+                                        <select class="form-select bordered-select form-select-sm">
+                                            <option selected>СОРТИРОВАТЬ</option>
+                                            <option value="1">По умолчанию</option>
+                                            <option value="2">По дате</option>
+                                            <option value="3">Дешевле</option>
+                                            <option value="3">Дороже</option>
+                                        </select>
+                                        
+                                    </div>
+                                </form>
+
+                                <!-- Мобильные фильтры -->
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilters">
+                                    <div class="offcanvas-header">
+                                        <p class="offcanvas-title">Фильтры</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasFilters" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="bg-white rounded-3 py-3 w-100">
+                                            <form action="#">
+                                                <div class="filters-container">
+                                                    <div class="filter-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                            На складе
+                                                            </label>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <a class="link-brown text-decoration-none" href="#">информировать об изменениях</a>
+                                                    <div class="filter-item">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                Все
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                Новые
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                                Б/У
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <a class="link-filter collapsed" data-bs-toggle="collapse" href="#collapse-filter-01" aria-expanded="false" aria-controls="collapse-filter-01">Производитель</a>
+                                                        <div class="collapse" id="collapse-filter-01">
+                                                            <div class="card filter-card">
+                                                                <div class="card-body p-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter01">
+                                                                        <label class="form-check-label" for="checkFilter01">
+                                                                            ФЗМ (Россия)
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter02">
+                                                                        <label class="form-check-label" for="checkFilter02">
+                                                                            Констрактор (Россия)
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter03">
+                                                                        <label class="form-check-label" for="checkFilter03">
+                                                                            ФЗМ
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter04">
+                                                                        <label class="form-check-label" for="checkFilter04">
+                                                                            СтелКон
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter05">
+                                                                        <label class="form-check-label" for="checkFilter05">
+                                                                            Аveto Constraction
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter06">
+                                                                        <label class="form-check-label" for="checkFilter06">
+                                                                            Кифато
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter07">
+                                                                        <label class="form-check-label" for="checkFilter07">
+                                                                            Constructor (Россия)
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter08">
+                                                                        <label class="form-check-label" for="checkFilter08">
+                                                                            Jungheinrich
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter09">
+                                                                        <label class="form-check-label" for="checkFilter09">
+                                                                            Микрон
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="checkFilter10">
+                                                                        <label class="form-check-label" for="checkFilter10">
+                                                                            Микрон (Россия)
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <a class="link-filter collapsed" data-bs-toggle="collapse" href="#collapse-filter-02" aria-expanded="false" aria-controls="collapse-filter-02">Состояние</a>
+                                                        <div class="collapse" id="collapse-filter-02">
+                                                            <div class="card filter-card">
+                                                                <div class="card-body p-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="conditionFilter01">
+                                                                        <label class="form-check-label" for="conditionFilter01">
+                                                                            Новое
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="conditionFilter02">
+                                                                        <label class="form-check-label" for="conditionFilter02">
+                                                                            Отличное
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="conditionFilter03">
+                                                                        <label class="form-check-label" for="conditionFilter03">
+                                                                            Хорошее
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="conditionFilter04">
+                                                                        <label class="form-check-label" for="conditionFilter04">
+                                                                            Удовлетворительное
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <div class="d-flex flex-column">
+                                                            <div class="text-uppercase py-2">ЦЕНА:</div>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <select class="form-select price-input form-select-sm">
+                                                                    <option selected>от</option>
+                                                                    <option value="1">10 000</option>
+                                                                    <option value="2">100 000</option>
+                                                                    <option value="3">1 000 000</option>
+                                                                    <option value="4">10 000 000</option>
+                                                                    <option value="5">100 000 000</option>
+                                                                </select>
+                                                                <div>-</div>
+                                                                <select class="form-select price-input form-select-sm">
+                                                                    <option selected>до</option>
+                                                                    <option value="1">10 000</option>
+                                                                    <option value="2">100 000</option>
+                                                                    <option value="3">1 000 000</option>
+                                                                    <option value="4">10 000 000</option>
+                                                                    <option value="5">100 000 000</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <div class="d-flex flex-column gap-3 mt-3">
+                                                            <button type="submit" class="btn btn-primary w-100">Применить</button>
+                                                            <button type="reset" class="btn btn-link fs-small-m text-decoration-underline p-0 w-100">Сбросить все</button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <p class="card-title">
-                                                    <a href="#">Стеллажи паллетные</a>
-                                                </p>
-                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                                <ul class="card-params-list">
-                                                    <li><span>производитель:</span> ФЗМ</li>
-                                                    <li><span>страна:</span> россия</li>
-                                                </ul>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <div class="product-price">цена: <span>1 103 240 ₽</span></div>
-                                                    <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
+                                            </form>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Сетка с товарами -->
+                            <div class="section-block">
+                                <div class="row gy-4 row-cols-1 row-cols-md-1 row-cols-lg-1">
+
+                                    <div class="col">
+                                        <div class="card product-card-horizontal">
+                                            <div class="card-img-container">
+                                                <div class="card-badge">NEW</div>
+                                                <div class="swiper productPreviewSwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/product-card-horizontal-01.png" alt="Стеллажи паллетные">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/product-card-horizontal-01.png" alt="Стеллажи паллетные">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/product-card-horizontal-01.png" alt="Стеллажи паллетные">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                    <p class="card-title mb-0">
+                                                        <a href="#">Мезонин</a>
+                                                    </p>
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <!-- Класс "active" окрашивает иконку -->
+                                                        <button type="button" class="btn btn-icon btn-state active">
+                                                            <svg class="compare-svg" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 1.5C19 0.671573 18.3284 0 17.5 0C16.6716 0 16 0.671573 16 1.5L16 17.5C16 18.3284 16.6716 19 17.5 19C18.3284 19 19 18.3284 19 17.5L19 1.5ZM9.5 4C10.3284 4 11 4.67157 11 5.5L11 17.5C11 18.3284 10.3284 19 9.5 19C8.67157 19 8 18.3284 8 17.5L8 5.5C8 4.67157 8.67157 4 9.5 4ZM1.5 9C2.32843 9 3 9.67157 3 10.5L3 17.5C3 18.3284 2.32843 19 1.5 19C0.671573 19 0 18.3284 0 17.5V10.5C0 9.67157 0.671573 9 1.5 9Z" fill="#D9D9D9"/>
+                                                            </svg>
+                                                        </button>
+                                                        <!-- Класс "active" окрашивает иконку -->
+                                                        <button type="button" class="btn btn-icon btn-state">
+                                                            <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#D9D9D9"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <p class="product-amount mb-2">Наличие: <span class="in-stock">на складе</span></p>
+                                                <p class="product-price"><span class="fs-6 text-primary">25 000 000 ₽</span></p>
+                                                <div class="product-params-table">
+                                                    <p class="fs-6 mb-2">Характеристики:</p>
+                                                    <table class="table table-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Год выпуска:</td>
+                                                                <td>2021</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Состояние:</td>
+                                                                <td>Hовое</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Производитель:</td>
+                                                                <td>МИКРОН</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Продавец:</td>
+                                                                <td>Утконос</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Местонахождение товара:</td>
+                                                                <td>г. Москва</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col">
-                                        <div class="card product-card">
+                                        <div class="card product-card-horizontal">
                                             <div class="card-img-container">
                                                 <div class="card-badge">NEW</div>
-                                                <a href="#">
-                                                    <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
-                                                </a>
-                                            </div>
-                                            <div class="card-timer">
-                                                <div>На аукционе: </div>
-                                                <div class="text-primary fw-700">20:09:09 сек</div>
+                                                <div class="swiper productPreviewSwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/product-card-horizontal-01.png" alt="Стеллажи паллетные">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/product-card-horizontal-01.png" alt="Стеллажи паллетные">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#">
+                                                                <img class="card-img" src="img/product-card-horizontal-01.png" alt="Стеллажи паллетные">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
                                             </div>
                                             <div class="card-body">
-                                                <div class="d-flex align-items-center gap-2 mb-3">
-                                                    <div>
-                                                        <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M16.5349 24.4942C16.63 24.4942 16.7078 24.5714 16.6993 24.6661C16.6479 25.2362 16.3419 25.7748 15.8333 26.1816C15.2739 26.6292 14.5151 26.8806 13.724 26.8806C12.9328 26.8806 12.1741 26.6292 11.6147 26.1816C11.1061 25.7748 10.8001 25.2362 10.7487 24.6661C10.7402 24.5714 10.818 24.4942 10.9131 24.4942L13.724 24.4942L16.5349 24.4942Z" fill="#463E3A"/>
-                                                            <path d="M6.45691 9.86782C6.45691 5.8541 9.71067 2.60034 13.7244 2.60034C17.7381 2.60034 20.9919 5.8541 20.9919 9.86782V13.1155C20.9919 13.4803 20.9919 13.6627 20.9989 13.842C21.0541 15.2527 21.4339 16.6317 22.1088 17.8718C22.1946 18.0294 22.288 18.1861 22.4748 18.4994L23.5914 20.3727C24.0501 21.1423 24.2795 21.527 24.1145 21.8174C23.9496 22.1077 23.5016 22.1077 22.6057 22.1077H4.8431C3.9472 22.1077 3.49925 22.1077 3.33431 21.8174C3.16937 21.527 3.39872 21.1423 3.85743 20.3727L4.97405 18.4994C5.16084 18.186 5.25423 18.0294 5.34001 17.8717C6.01492 16.6317 6.39472 15.2527 6.44989 13.842C6.45691 13.6627 6.45691 13.4803 6.45691 13.1155V9.86782Z" fill="#463E3A"/>
-                                                            <circle cx="13.7247" cy="2.60028" r="2.29499" fill="#463E3A"/>
-                                                            <path d="M2.2627 5.64832C2.2627 5.64832 1.06531 7.54417 1.06531 10.205C1.06531 12.8659 2.26269 14.8283 2.26269 14.8283" stroke="#463E3A" stroke-width="1.96221" stroke-linecap="round"/>
-                                                            <path d="M24.9473 14.8282C24.9473 14.8282 26.1446 12.9324 26.1446 10.2715C26.1446 7.61068 24.9473 5.64831 24.9473 5.64831" stroke="#463E3A" stroke-width="1.96221" stroke-linecap="round"/>
-                                                        </svg>
-                                                    </div>
-                                                    <div>
-                                                        <a class="link-brown text-decoration-none" href="#">информировать об изменениях</a>
+                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                    <p class="card-title mb-0">
+                                                        <a href="#">Мезонин</a>
+                                                    </p>
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <!-- Класс "active" окрашивает иконку -->
+                                                        <button type="button" class="btn btn-icon btn-state">
+                                                            <svg class="compare-svg" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 1.5C19 0.671573 18.3284 0 17.5 0C16.6716 0 16 0.671573 16 1.5L16 17.5C16 18.3284 16.6716 19 17.5 19C18.3284 19 19 18.3284 19 17.5L19 1.5ZM9.5 4C10.3284 4 11 4.67157 11 5.5L11 17.5C11 18.3284 10.3284 19 9.5 19C8.67157 19 8 18.3284 8 17.5L8 5.5C8 4.67157 8.67157 4 9.5 4ZM1.5 9C2.32843 9 3 9.67157 3 10.5L3 17.5C3 18.3284 2.32843 19 1.5 19C0.671573 19 0 18.3284 0 17.5V10.5C0 9.67157 0.671573 9 1.5 9Z" fill="#D9D9D9"/>
+                                                            </svg>
+                                                        </button>
+                                                        <!-- Класс "active" окрашивает иконку -->
+                                                        <button type="button" class="btn btn-icon btn-state active">
+                                                            <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#D9D9D9"/>
+                                                            </svg>
+                                                        </button>
                                                     </div>
                                                 </div>
-                                                <p class="card-title">
-                                                    <a href="#">Стеллажи паллетные</a>
-                                                </p>
-                                                <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
-                                                <ul class="card-params-list">
-                                                    <li><span>производитель:</span> ФЗМ</li>
-                                                    <li><span>страна:</span> россия</li>
-                                                </ul>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <div class="product-price">цена: <span>1 103 240 ₽</span></div>
-                                                    <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
+                                                <p class="product-amount mb-2">Наличие: <span class="in-stock">на складе</span></p>
+                                                <p class="product-price"><span class="fs-6 text-primary">25 000 000 ₽</span></p>
+                                                <div class="product-params-table">
+                                                    <p class="fs-6 mb-2">Характеристики:</p>
+                                                    <table class="table table-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Год выпуска:</td>
+                                                                <td>2021</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Состояние:</td>
+                                                                <td>Hовое</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Производитель:</td>
+                                                                <td>МИКРОН</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Продавец:</td>
+                                                                <td>Утконос</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Местонахождение товара:</td>
+                                                                <td>г. Москва</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Текстовый блок -->
+                            <div class="section-block">
+                                <p><strong>Складское оборудование и стеллажи существенно облегчают разгрузку, поиск и перемещение товаров. А для больших объёмов — и вовсе незаменимы.</strong></p>
+                                <p>Чтобы понять, какое складское оборудование нужно купить именно вам, следует определиться с необходимыми функциями:</p>
+                                <p>-нужно ли перемещать грузы на большие расстояния;</p>
+                                <p>-максимальный вес и количество транспортируемых грузов;</p>
+                                <p>-высоту стеллажей;</p>
+                                <p>-наличие гидравлического или электрического привода — всё это играет важную роль.</p>
+                                <p>Покупая складское оборудование б/у, следует особенно внимательно проверить его соответствие нормам безопасности и возможность гарантийного обслуживания. При выборе нового складского оборудования у нас вы всегда можете обратиться к консультантам и задать любые вопросы, чтобы принять наиболее оптимальное для вас решение.</p>
+                            </div>
+
+                            <!-- Блок с иконками -->
+                            <div class="section-block">
+                                <div class="container-small">
+                                    <div class="row gy-3 row-cols-2 row-cols-md-2 row-cols-lg-4">
+                                        <div class="col">
+                                            <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                                <img class="img-fluid" src="img/icon-package.png" alt="package" width="64" height="64">
+                                                <div class="text-center" style="max-width: 120px;">
+                                                    <p class="small">большой ассортимент</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                                <img class="img-fluid" src="img/icon-delivery.png" alt="delivery" width="64" height="64">
+                                                <div class="text-center" style="max-width: 120px;">
+                                                    <p class="small">продаем оборудование по всей России</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                                <img class="img-fluid" src="img/icon-package.png" alt="package" width="64" height="64">
+                                                <div class="text-center" style="max-width: 120px;">
+                                                    <p class="small">бесплатная консультация</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex gap-3 flex-column align-items-center h-100">
+                                                <img class="img-fluid" src="img/icon-delivery.png" alt="delivery" width="64" height="64">
+                                                <div class="text-center" style="max-width: 120px;">
+                                                    <p class="small">гарантия на новую технику</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Товары той же категории -->
+        <section class="section">
+            <div class="container">
+                <div class="section-top">
+                    <h2 class="section-title">товары категории склад</h2>
+                </div>
+            </div>
+            <div class="products-container px-3">
+                <div class="swiper productsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card product-card">
+                                <div class="card-img-container">
+                                    <div class="card-badge">NEW</div>
+                                    <a href="#">
+                                        <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Стеллажи паллетные</a>
+                                    </p>
+                                    <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                    <ul class="card-params-list">
+                                        <li><span>производитель:</span> ФЗМ</li>
+                                        <li><span>страна:</span> россия</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card product-card">
+                                <div class="card-img-container">
+                                    <div class="card-badge">NEW</div>
+                                    <a href="#">
+                                        <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Стеллажи паллетные</a>
+                                    </p>
+                                    <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                    <ul class="card-params-list">
+                                        <li><span>производитель:</span> ФЗМ</li>
+                                        <li><span>страна:</span> россия</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card product-card">
+                                <div class="card-img-container">
+                                    <div class="card-badge">NEW</div>
+                                    <a href="#">
+                                        <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Стеллажи паллетные</a>
+                                    </p>
+                                    <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                    <ul class="card-params-list">
+                                        <li><span>производитель:</span> ФЗМ</li>
+                                        <li><span>страна:</span> россия</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card product-card">
+                                <div class="card-img-container">
+                                    <div class="card-badge">NEW</div>
+                                    <a href="#">
+                                        <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Стеллажи паллетные</a>
+                                    </p>
+                                    <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                    <ul class="card-params-list">
+                                        <li><span>производитель:</span> ФЗМ</li>
+                                        <li><span>страна:</span> россия</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card product-card">
+                                <div class="card-img-container">
+                                    <div class="card-badge">NEW</div>
+                                    <a href="#">
+                                        <img class="card-img-top" src="img/a97f837cfad83802eb36.png" alt="Стеллажи паллетные">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Стеллажи паллетные</a>
+                                    </p>
+                                    <p class="product-amount">Наличие: <span class="in-stock">на складе</span></p>
+                                    <ul class="card-params-list">
+                                        <li><span>производитель:</span> ФЗМ</li>
+                                        <li><span>страна:</span> россия</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="product-price">цена: <span>1 103 240 ₽</span></div>
+                                        <a class="btn btn-link link-with-arrow px-0 py-0" href="#">купить</a>
                                     </div>
                                 </div>
                             </div>
@@ -817,41 +1355,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <p class="section-title">Новостная рассылка</p>
-                        <p>Мы отправляем наши лучшие предложения и анонсы аукционов</p>
-                    </div>
-                    <div class="col-lg-8">
-                        <form action="#">
-                            <div class="row align-items-end">
-                                <div class="col-lg-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">E-mail*</label>
-                                        <input type="email" class="form-control" placeholder="info@mesee.ru">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="mb-3">
-                                        <select class="form-select" aria-label="Номер страны">
-                                            <option>выбор категории</option>
-                                            <option>категория 1</option>
-                                            <option>категория 2</option>
-                                            <option>категория 3</option>
-                                            <option>категория 4</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <button type="submit" class="btn btn-primary">подписаться</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="text-center mt-5">
+                    <a class="btn btn-link link-with-arrow px-0 py-0" href="#">смотреть все</a>
                 </div>
             </div>
         </section>

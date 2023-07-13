@@ -72,3 +72,19 @@ const productPreviewSwiper = new Swiper(".productPreviewSwiper", {
     clickable: true,
   },
 });
+
+// Клик по кнопке меняет статус
+const buttonsState = document.querySelectorAll('.btn-state');
+
+buttonsState.forEach(button => {
+  button.addEventListener('click', () => {
+    // Проверяем, есть ли у кнопки класс "active"
+    if (button.classList.contains('active')) {
+      // Если есть, то удаляем класс "active"
+      button.classList.remove('active');
+    } else {
+      // Если нет, то добавляем класс "active"
+      button.classList.add('active');
+    }
+  });
+});
