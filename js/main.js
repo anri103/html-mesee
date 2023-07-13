@@ -53,6 +53,10 @@ const productsSwiper = new Swiper(".productsSwiper", {
       slidesPerView: 4,
       spaceBetween: 30,
     },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
   },
 });
 
