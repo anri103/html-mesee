@@ -77,6 +77,25 @@ const productPreviewSwiper = new Swiper(".productPreviewSwiper", {
   },
 });
 
+const thumbsSwiper = new Swiper(".thumbsSwiper", {
+  spaceBetween: 8,
+  slidesPerView: 4,
+});
+const productItemSwiper = new Swiper(".productItemSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  grabCursor: true,
+  thumbs: {
+      swiper: thumbsSwiper,
+  },
+  breakpoints: {
+      992: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+      },
+  },
+});
+
 // Клик по кнопке меняет статус
 const buttonsState = document.querySelectorAll('.btn-state');
 
