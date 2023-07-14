@@ -577,7 +577,7 @@
                     <div class="col-lg-6 d-none d-lg-block">
                         <div class="buttons-container d-flex gap-3 justify-content-lg-end">
                             <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
-                            <a class="btn btn-svg px-0 active" href="#">
+                            <a class="btn btn-svg border-0 px-0 py-0 active" href="#">
                                 <svg class="compare-svg" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2C20 0.89543 19.1046 0 18 0C16.8954 0 16 0.895431 16 2V17C16 18.1046 16.8954 19 18 19C19.1046 19 20 18.1046 20 17V2ZM10 4C11.1046 4 12 4.89543 12 6L12 17C12 18.1046 11.1046 19 10 19C8.89543 19 8 18.1046 8 17L8 6C8 4.89543 8.89543 4 10 4ZM2 9C3.10457 9 4 9.89543 4 11L4 17C4 18.1046 3.10457 19 2 19C0.895431 19 0 18.1046 0 17V11C0 9.89543 0.895431 9 2 9Z" fill="#DEDEDE"/>
                                 </svg>
@@ -585,7 +585,7 @@
                                 <span class="badge text-bg-light">3</span>
                             </a>
                             <!-- Добавляя класс "active" к кнопке - меняется цвет svg -->
-                            <a class="btn btn-svg px-0" href="#">
+                            <a class="btn btn-svg border-0 px-0 py-0" href="#">
                                 <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#DEDEDE"/>
                                 </svg>
@@ -598,11 +598,12 @@
             </div>
         </section>
 
-        <section class="section section-page-content">
+        <section class="section section-product">
             <div class="container">
                 <div class="row gy-3">
                     <!-- Sidebar -->
-                    <div class="col-lg-4">
+                    <!-- Скрывается только на этой странице, т.е. на шаблоне со страницей карточки товара -->
+                    <div class="col-lg-4 d-none d-lg-block">
                         <div class="sidebar sidebar-left">
                             <div class="sidebar-widget categories-widget d-none d-lg-block">
                                 <div class="bg-white rounded-3 p-3">
@@ -746,6 +747,7 @@
                     <!-- Content -->
                     <div class="col-lg-8">
                         <div class="sections-container">
+
                             <div class="section-block">
                                 <div class="row gy-3">
                                     <div class="col-lg-6">
@@ -780,7 +782,7 @@
                                             </div>
                                         </div>
                                         <!-- Тумбы -->
-                                        <div class="d-none d-lg-block mt-2">
+                                        <div class="mt-2">
                                             <div class="swiper thumbsSwiper">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
@@ -799,12 +801,189 @@
                                                         <img class="slide-img" src="img/shop-item-thumb-04.png" alt="">
                                                     </div>
                                                 </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
                                             </div> 
                                         </div>
                                     </div>
-                                    <div class="col-lg-6"></div>
+                                    <div class="col-lg-6">
+                                        <div class="bg-white rounded-3 h-100 p-3">
+                                            <div class="d-flex align-items-start justify-content-between mb-3">
+                                                <h1 class="product-title">Мезонин</h1>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <!-- Класс "active" окрашивает иконку -->
+                                                    <button type="button" class="btn btn-icon btn-state">
+                                                        <svg class="wishlist-svg" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.0979 1.8541C10.6966 0.0114765 13.3034 0.0114799 13.9021 1.8541L15.1432 5.67376C15.4109 6.49781 16.1789 7.05573 17.0453 7.05573H21.0615C22.999 7.05573 23.8045 9.53496 22.2371 10.6738L18.9879 13.0344C18.2869 13.5437 17.9936 14.4465 18.2614 15.2705L19.5024 19.0902C20.1012 20.9328 17.9922 22.465 16.4248 21.3262L13.1756 18.9656C12.4746 18.4563 11.5254 18.4563 10.8244 18.9656L7.57523 21.3262C6.0078 22.465 3.89885 20.9328 4.49755 19.0902L5.73863 15.2705C6.00638 14.4465 5.71306 13.5437 5.01209 13.0344L1.76289 10.6738C0.195462 9.53496 1.00102 7.05573 2.93846 7.05573H6.95469C7.82115 7.05573 8.58906 6.49781 8.8568 5.67376L10.0979 1.8541Z" fill="#D9D9D9"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount mb-3">Наличие: <span class="in-stock">на складе</span></div>
+                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                                <div class="product-price">
+                                                    <span class="fs-6 text-primary">25 000 000 ₽</span>
+                                                </div>
+                                                <div class="product-quantity d-flex gap-2 align-items-center">
+                                                    <div>кол-во:</div>
+                                                    <div class="quantity-buttons">
+                                                        <button type="button">-</button>
+                                                        <input type="text" name="quantity" value="1" size="1">
+                                                        <button type="button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-params-table">
+                                                <p class="fs-6 mb-2">Характеристики:</p>
+                                                <table class="table table-sm">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Год выпуска:</td>
+                                                            <td>2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Состояние:</td>
+                                                            <td>Hовое</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Производитель:</td>
+                                                            <td>МИКРОН</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Продавец:</td>
+                                                            <td>Утконос</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Местонахождение товара:</td>
+                                                            <td>г. Москва</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center mt-4" style="gap: 30px;">
+                                                <a class="btn btn-outline" href="#">оформить заявку</a>
+                                                <div>или</div>
+                                                <a class="btn btn-svg text-primary border-0 px-0 py-0" href="#">
+                                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M26.6628 20.4361L23.2559 18.4691C22.751 18.1775 22.1618 18.1004 21.597 18.2517C21.0321 18.403 20.5605 18.7645 20.2689 19.2695C20.0868 19.585 19.7663 19.9823 19.2742 20.083C18.8281 20.1742 18.4342 20.0857 18.0701 19.8124C16.7848 18.8479 15.152 17.215 14.1876 15.9299C13.9143 15.5658 13.8258 15.1719 13.917 14.7258C14.0177 14.2336 14.4149 13.9132 14.7305 13.7311C15.2355 13.4396 15.5969 12.9679 15.7482 12.403C15.8996 11.8381 15.8224 11.249 15.5309 10.7441L13.5639 7.33709C13.0186 6.3928 11.8862 5.99648 10.8711 6.39505L10.8297 6.41132C9.21015 7.0471 8.02652 7.53445 7.54415 8.01676C6.48391 9.077 5.52454 11.0941 6.97505 14.6826C7.91802 17.0155 9.72686 19.5898 12.0685 21.9314C14.41 24.2729 16.9843 26.0818 19.3172 27.0248C20.6259 27.5538 21.7254 27.7623 22.6459 27.7623C24.2495 27.7622 25.3095 27.1293 25.9832 26.4557C26.4655 25.9733 26.9528 24.7897 27.5886 23.1702L27.6049 23.1288C28.0034 22.1138 27.6073 20.9814 26.6628 20.4361ZM26.1214 22.5464L26.1052 22.5878C25.7929 23.3832 25.1431 25.0383 24.8563 25.3288C23.552 26.6331 21.4491 26.1675 19.9146 25.5473C17.8064 24.6951 15.3574 22.9665 13.1955 20.8045C11.0335 18.6425 9.30484 16.1935 8.45272 14.0854C7.83248 12.5509 7.36684 10.448 8.67113 9.14374C8.96166 8.8568 10.6168 8.20708 11.4121 7.89477L11.4536 7.8785C11.5278 7.84942 11.6034 7.83541 11.6773 7.83541C11.882 7.83541 12.0733 7.94279 12.1837 8.13397L14.1508 11.5409C14.2295 11.6772 14.2501 11.8368 14.2089 11.9905C14.1677 12.1442 14.07 12.2721 13.9337 12.3508C13.0873 12.8394 12.5268 13.5695 12.3557 14.4065C12.1731 15.2998 12.3657 16.1573 12.9129 16.8864C13.9731 18.2994 15.7006 20.0267 17.1136 21.0872C17.8428 21.6344 18.7005 21.8269 19.5936 21.6444C20.4305 21.4732 21.1606 20.9128 21.6493 20.0663C21.728 19.93 21.8559 19.8324 22.0096 19.7911C22.1632 19.7498 22.3228 19.7705 22.4591 19.8492L25.8661 21.8163C26.1261 21.9666 26.2312 22.2668 26.1214 22.5464ZM17.382 10.5013C17.382 10.0612 17.7387 9.70441 18.1788 9.70441C19.8127 9.70441 21.3487 10.3406 22.5041 11.496C23.6594 12.6513 24.2957 14.1873 24.2957 15.8212C24.2957 16.2613 23.9389 16.6181 23.4988 16.6181C23.0587 16.6181 22.7019 16.2613 22.7019 15.8212C22.7019 14.6131 22.2314 13.4772 21.3771 12.623C20.5228 11.7686 19.387 11.2982 18.1788 11.2982C17.7388 11.2981 17.382 10.9414 17.382 10.5013ZM17.382 7.0813C17.382 6.64122 17.7388 6.28442 18.1788 6.28442C20.7262 6.28442 23.1211 7.2764 24.9223 9.07767C26.7236 10.8789 27.7156 13.2738 27.7156 15.8212C27.7156 16.2612 27.3588 16.618 26.9187 16.618C26.4786 16.618 26.1218 16.2612 26.1218 15.8212C26.1218 13.6995 25.2956 11.7048 23.7954 10.2046C22.2952 8.7044 20.3005 7.87817 18.1788 7.87817C17.7388 7.87817 17.382 7.52137 17.382 7.0813ZM17.382 13.9211C17.382 13.4811 17.7388 13.1243 18.1788 13.1243C18.8992 13.1243 19.5764 13.4048 20.0858 13.9141C20.5952 14.4236 20.8757 15.1008 20.8757 15.8211C20.8757 16.2612 20.5189 16.618 20.0788 16.618C19.6387 16.618 19.2819 16.2612 19.2819 15.8211C19.2819 15.5264 19.1672 15.2494 18.9588 15.041C18.7505 14.8327 18.4734 14.7179 18.1788 14.7179C17.7388 14.718 17.382 14.3613 17.382 13.9211ZM28.7942 0H5.20578C2.33531 0 0 2.33531 0 5.20578V28.7943C0 31.6647 2.33531 34 5.20578 34H28.7943C31.6647 34 34 31.6647 34 28.7942V5.20578C34 2.33531 31.6647 0 28.7942 0ZM32.4062 28.7942C32.4062 30.7859 30.7859 32.4062 28.7942 32.4062H5.20578C3.21413 32.4062 1.59375 30.7859 1.59375 28.7942V5.20578C1.59375 3.21406 3.21413 1.59375 5.20578 1.59375H28.7943C30.7859 1.59375 32.4062 3.21406 32.4062 5.20578V28.7942Z" fill="url(#paint0_linear_228_3246)"/>
+                                                        <defs>
+                                                        <linearGradient id="paint0_linear_228_3246" x1="-6.53075e-08" y1="22.898" x2="37.395" y2="22.5741" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#FF6721"/>
+                                                        <stop offset="1" stop-color="#FF976A"/>
+                                                        </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <span>Перезвоните мне</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="section-block">
+                                <div class="product-info">
+                                    <!-- ТАБЫ -->
+                                    <div class="info-tabs d-none d-lg-block px-lg-4">
+                                        <div class="info-tabs-nav d-flex justify-content-center" role="tablist">
+                                            <button type="button" class="info-tabs-link active" data-bs-toggle="pill" data-bs-target="#tab-description" role="tab" aria-controls="tab-description" aria-selected="true">Описание</button>
+                                            <button type="button" class="info-tabs-link" data-bs-toggle="pill" data-bs-target="#tab-buyers" role="tab" aria-controls="tab-buyers" aria-selected="false" tabindex="-1">Покупателям</button>
+                                            <button type="button" class="info-tabs-link" data-bs-toggle="pill" data-bs-target="#tab-about-seller" role="tab" aria-controls="tab-about-seller" aria-selected="false" tabindex="-1">О прадовце</button>
+                                        </div>
+                                    </div>            
+                                    <!-- ТАБЫ КОНТЕНТ -->
+                                    <div class="tab-content p-3 p-lg-4">
+
+                                        <div class="tab-pane show active" id="tab-description" role="tabpanel" tabindex="0">
+                                            <div class="d-lg-none">
+                                                <button type="button" class="info-collapse-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-description" aria-expanded="false" aria-controls="collapse-description">Описание</button>
+                                            </div>
+                                            <div class="collapse" id="collapse-description">
+                                                <!-- Контейнер для заголовка -->
+                                                <div class="fs-6">
+                                                    <p>1. Мезонин-платформа, на колоннах, производства МИКРОН (2021 год). Новый, без эксплуатации.</p>
+                                                </div>
+                                                <!-- Контейнер для контента -->
+                                                <div>
+                                                    <ul>
+                                                        <li>4 этажа (один напольный уровень, три уровня платформ)</li>
+                                                        <li>Площадь по полу 1000 кв.м.</li>
+                                                        <li>Периметр 20х50 м</li>
+                                                        <li>Шаг колонн 3,85х5,0 м</li>
+                                                        <li>Высота этажей 2,5 м</li>
+                                                        <li>Тип полов - проливной оцинкованный пресс-настил с ячейкой 33х11 мм</li>
+                                                        <li>Тип перекрытий - балки сигма-профиля</li>
+                                                        <li>Два лестничных блока</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane" id="tab-buyers" role="tabpanel" tabindex="0">
+                                            <div class="d-lg-none">
+                                                <button type="button" class="info-collapse-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-buyers" aria-expanded="false" aria-controls="collapse-buyers">Покупателям</button>
+                                            </div>
+                                            <div class="collapse" id="collapse-buyers">
+                                                <!-- Контейнер для заголовка -->
+                                                <div class="fs-6">
+                                                    <p>2. Мезонин-платформа, на колоннах, производства МИКРОН (2021 год). Новый, без эксплуатации.</p>
+                                                </div>
+                                                <!-- Контейнер для контента -->
+                                                <div>
+                                                    <ul>
+                                                        <li>4 этажа (один напольный уровень, три уровня платформ)</li>
+                                                        <li>Площадь по полу 1000 кв.м.</li>
+                                                        <li>Периметр 20х50 м</li>
+                                                        <li>Шаг колонн 3,85х5,0 м</li>
+                                                        <li>Высота этажей 2,5 м</li>
+                                                        <li>Тип полов - проливной оцинкованный пресс-настил с ячейкой 33х11 мм</li>
+                                                        <li>Тип перекрытий - балки сигма-профиля</li>
+                                                        <li>Два лестничных блока</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane" id="tab-about-seller" role="tabpanel" tabindex="0">
+                                            <div class="d-lg-none">
+                                                <button type="button" class="info-collapse-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-about-seller" aria-expanded="false" aria-controls="collapse-about-seller">О прадовце</button>
+                                            </div>
+                                            <div class="collapse" id="collapse-about-seller">
+                                                <!-- Контейнер для заголовка -->
+                                                <div class="fs-6">
+                                                    <p>3. Мезонин-платформа, на колоннах, производства МИКРОН (2021 год). Новый, без эксплуатации.</p>
+                                                </div>
+                                                <!-- Контейнер для контента -->
+                                                <div>
+                                                    <ul>
+                                                        <li>4 этажа (один напольный уровень, три уровня платформ)</li>
+                                                        <li>Площадь по полу 1000 кв.м.</li>
+                                                        <li>Периметр 20х50 м</li>
+                                                        <li>Шаг колонн 3,85х5,0 м</li>
+                                                        <li>Высота этажей 2,5 м</li>
+                                                        <li>Тип полов - проливной оцинкованный пресс-настил с ячейкой 33х11 мм</li>
+                                                        <li>Тип перекрытий - балки сигма-профиля</li>
+                                                        <li>Два лестничных блока</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-block">
+                                <div class="position-relative rounded-3 bg-img" style="height: 450px; background-image: url(img/shop-item-video.jpg);">
+                                    <a class="position-absolute top-50 start-50 translate-middle" href="https://youtu.be/X-HL-r5TOiU" data-fancybox="item-video-youtube">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="27" fill="#DEDEDE" fill-opacity="0.9"/>
+                                            <path d="M36.4912 25.2688C37.8245 26.0386 37.8245 27.9631 36.4912 28.7329L23.7524 36.0876C22.4191 36.8574 20.7524 35.8952 20.7524 34.3556L20.7524 19.6461C20.7524 18.1065 22.4191 17.1442 23.7524 17.914L36.4912 25.2688Z" fill="#FF6721"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

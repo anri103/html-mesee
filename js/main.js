@@ -19,6 +19,28 @@ Fancybox.bind("[data-fancybox]", {
   },
 });
 
+const partnersSwiper = new Swiper(".partnersSwiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 15,
+  loop: true,
+  freeMode: true,
+  speed: 5000,
+  autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 4.5,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 6.5,
+      spaceBetween: 30,
+    },
+  },
+});
+
 const feedbackSwiper = new Swiper(".feedbackSwiper", {
   slidesPerView: 1,
   spaceBetween: 15,
@@ -80,6 +102,10 @@ const productPreviewSwiper = new Swiper(".productPreviewSwiper", {
 const thumbsSwiper = new Swiper(".thumbsSwiper", {
   spaceBetween: 8,
   slidesPerView: 4,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 const productItemSwiper = new Swiper(".productItemSwiper", {
   slidesPerView: 1,
