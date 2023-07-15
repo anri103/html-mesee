@@ -86,7 +86,7 @@ const productPreviewSwiper = new Swiper(".productPreviewSwiper", {
   slidesPerView: 1,
   spaceBetween: 15,
   loop: true,
-  grabCursor: true,
+  grabCursor: false,
   // preloadImages: false,
   lazy: true,
   navigation: {
