@@ -389,7 +389,7 @@ textarea {
     fill: #1BCE51;
 }
 
-.btn-svg.active .wishlist-svg path {
+.btn-svg.active .whishlist-svg path {
     fill: #FFDF5F;
 }
 
@@ -746,7 +746,6 @@ textarea {
 .menu-divider {
     width: 2px;
     height: 29px;
-    margin: 0 24px;
     background: #F0EDEB;
 }
 
@@ -1012,7 +1011,7 @@ textarea {
     fill: #FF6721;
 }
 
-.appBottomMenu .item.active .icon-wishlist path {
+.appBottomMenu .item.active .icon-whishlist path {
     stroke: #FF6721;
 }
 
@@ -1788,7 +1787,7 @@ textarea {
     fill: #1BCE51;
 }
 
-.btn-state.active .wishlist-svg path {
+.btn-state.active .whishlist-svg path {
     fill: #FFDF5F;
 }
 
