@@ -2153,6 +2153,10 @@ textarea {
     padding: 10px;
     cursor: pointer;
 }
+
+#search-results li a {
+    display: block;
+}
   
 #search-results li:hover {
     background-color: #f2f2f2;
