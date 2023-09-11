@@ -137,3 +137,43 @@ buttonsState.forEach(button => {
     }
   });
 });
+
+// Умный поиск
+document.addEventListener('click', function(event) {
+  if (!searchDropdown.contains(event.target)) {
+    searchDropdown.style.display = 'none';
+  }
+});
+
+const searchInput = document.getElementById('search-input-top');
+const searchResults = document.getElementById('search-results');
+const searchDropdown = document.querySelector('.search-dropdown');
+
+searchInput.addEventListener('input', function() {
+  const inputValue = this.value;
+
+  if (inputValue.length > 0) {
+    searchDropdown.style.display = 'block';
+    searchResults.innerHTML = '';
+
+    const suggestions = ['подсказка 1', 'подсказка 2', 'подсказка 3', 'подсказка 4'];
+
+    suggestions.forEach(suggestion => {
+      const li = document.createElement('li');
+      li.textContent = suggestion;
+      li.addEventListener('click', function() {
+        searchInput.value = suggestion;
+        searchDropdown.style.display = 'none';
+      });
+      searchResults.appendChild(li);
+    });
+  } else {
+    searchDropdown.style.display = 'none';
+  }
+});
+
+document.addEventListener('click', function(event) {
+  if (!searchDropdown.contains(event.target)) {
+    searchDropdown.style.display = 'none';
+  }
+});

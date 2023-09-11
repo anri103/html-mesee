@@ -2127,3 +2127,33 @@ textarea {
     margin-bottom: 1em;
     background-size: 1em auto;
 }
+
+/* Умный поиск */
+
+.search-dropdown {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    display: none;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 99;
+}
+  
+#search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#search-results li {
+    padding: 10px;
+    cursor: pointer;
+}
+  
+#search-results li:hover {
+    background-color: #f2f2f2;
+}
