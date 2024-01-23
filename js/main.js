@@ -107,6 +107,7 @@ const thumbsSwiper = new Swiper(".thumbsSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 const productItemSwiper = new Swiper(".productItemSwiper", {
   slidesPerView: 1,
   spaceBetween: 15,
@@ -119,6 +120,33 @@ const productItemSwiper = new Swiper(".productItemSwiper", {
           slidesPerView: 1,
           spaceBetween: 30,
       },
+  },
+});
+
+const categoriesListSwiper = new Swiper(".categoriesListSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 12,
+  loop: false,
+  grabCursor: true,
+  breakpoints: {
+    400: {
+      slidesPerView: 1.75,
+    },
+    500: {
+      slidesPerView: 2.15,
+    },
+    768: {
+      slidesPerView: 3.15,
+    },
+    992: {
+      slidesPerView: 3.15,
+    },
+    1200: {
+      slidesPerView: 3.75,
+    },
+    1400: {
+      slidesPerView: 4.15,
+    },
   },
 });
 
