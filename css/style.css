@@ -691,6 +691,8 @@ textarea {
 /* categories_dropdown */
 
 .catalog-menu__wrapper {
+    max-height: 650px;
+    overflow-y: auto;
     background-color: #fff;
 }
 
