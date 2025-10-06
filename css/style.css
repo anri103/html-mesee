@@ -774,8 +774,6 @@ textarea {
     object-fit: cover;
 }
 
-.categories_dropdown .tab-pane ul li.has-submenu {}
-
 .categories_dropdown .tab-pane .switcher {
     display: inline-block;
     width: 32px;
