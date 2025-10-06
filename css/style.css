@@ -723,6 +723,7 @@ textarea {
 
 .categories_dropdown .nav-tabs .nav-link {
     display: flex;
+    align-items: baseline;
     width: 100%;
     text-align: left;
     border: none;
